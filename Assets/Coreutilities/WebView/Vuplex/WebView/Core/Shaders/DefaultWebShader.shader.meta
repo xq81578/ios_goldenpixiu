@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 4e653f72759f94e82b22355692823efe
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 202522
+  packageName: 2D WebView for WebGL (Web Browser IFrame)
+  packageVersion: 4.14
+  assetPath: Assets/Vuplex/WebView/Core/Shaders/DefaultWebShader.shader
+  uploadId: 828216

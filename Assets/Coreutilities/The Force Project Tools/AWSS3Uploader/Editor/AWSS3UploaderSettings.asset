@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3fdc59eb8aa3b548aade8a5d6a2c956, type: 3}
+  m_Name: AWSS3UploaderSettings
+  m_EditorClassIdentifier: 
+  _profiles:
+  - ProfileName: AWS_PRO
+    SyncWithAddressableProfile: 1
+    S3BucketName: gowin-pro
+    WebGlBuildS3Root: games
+    AccessKeyId: AKIAQHLS5VPX7WC3K7N2
+    SecretAccessKey: 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
+    AwsRegion: ap-northeast-1
+    CloudFrontDistributionId: E11W8OXUPNBI1E
+    MaxConcurrentUploads: 10
+    UploadToRootDirectory: 1
+    UploadAssetBundle: 1
+    AssetBundleS3Path: assets
+    AssetBundleS3Root: assets
+    ExcludeBundleSourceFromClear: 0
+    SkipDuplicateBundleUploads: 0
+  _selectedProfileIndex: 0

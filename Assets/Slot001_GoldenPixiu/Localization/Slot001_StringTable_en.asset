@@ -1,0 +1,266 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Slot001_StringTable_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 4bcad43e7e8dab7409d2be9b0bdd049a, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 36287930368
+    m_Localized: FREE SPINS WITH UNLIMITED MULTIPLIERS.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36313096192
+    m_Localized: WIN UP TO 10,000X BET
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36313096193
+    m_Localized: BET
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36313096194
+    m_Localized: All multipliers in the free spins will start from x2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36313096195
+    m_Localized: GAME RULES
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36313096196
+    m_Localized: "This is a slot machine with 6 reels and 5 rows, with additional
+      reels above Reels 2 through 5, offering up to 32400 ways to win. \nPlayers
+      will place bets for a random number of winning Ways on each spin."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36313096197
+    m_Localized: 'This is the SCATTER symbol.
+
+      SCATTER symbol is present on
+      all reels.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36313096198
+    m_Localized: CASCADING REELS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36313096199
+    m_Localized: "After each spin, all winning symbols will be removed. \nThe remaining
+      symbols on reels 1 through 6 will cascade to the bottom of the screen. \nEmpty
+      spaces will be filled by new symbols falling from above. \nOn reels 2 through
+      5, the extra reels above will drop new symbols from right to left to fill the
+      empty spaces. \nEach new symbol will occupy one symbol space. \nThis process
+      continues until no more winning combinations appear. \nAll winnings will be
+      awarded to the player after all consecutive cascades are completed."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36313096200
+    m_Localized: 'In any spin, symbols on Reels 2, 3, 4, and 5 (including Wild and
+      Scatter symbols) may occupy 1 to 4 symbol spaces, and each of these symbols
+      will be counted as a single symbol for payout calculations.
+
+      From left
+      to right, these are symbols that occupy 1 to 4 symbol spaces.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36313096201
+    m_Localized: "In the base game, the initial multiplier starts at X1. \nOn the
+      first cascade, the multiplier is x1; on the second cascade, the multiplier
+      becomes x2, and continues to increase with each subsequent cascade, up to a
+      maximum of x4.\nThe multiplier resets every time the reels refresh."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36313096202
+    m_Localized: "In the free game, the initial multiplier starts at X2. \nOn the
+      first cascade, the multiplier is x2; on the second cascade, the multiplier
+      becomes x3, and continues to increase with each cascade. \nIn the free game,
+      the multiplier does not reset and keeps accumulating until the end of the free
+      spins."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36313096203
+    m_Localized: GOLDEN WILD SYMBOL
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36313096204
+    m_Localized: During any spin, when a winning combination includes a Golden Frame
+      Wild symbol, it will transform into a Wild symbol and drop down.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36313096205
+    m_Localized: FREE GAME RULE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36313096206
+    m_Localized: 'In the base game, 4 or more scatters appearing on the screen will
+      trigger the free game.
+
+      4 Scatters = 8 Free Spins
+
+      5 Scatters =
+      10 Free Spins
+
+      6+ Scatters = 12 Free Spins
+
+      During the free game,
+      if 4+ Scatters appear, an additional 8 free spins will be awarded.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36313096207
+    m_Localized: BUY FREE SPINS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36313096208
+    m_Localized: The FREE SPINS ROUND can be instantly triggered from the base game
+      by buying it for 100x current total bet.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36313096209
+    m_Localized: MAX WIN
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36313096210
+    m_Localized: "The maximum win amount is limited to 2,000x bet in both base game
+      and free spins. \nIf the total win of a FREE SPINS round reaches 2,000x bet
+      the round immediately ends, win is awarded and all remaining free spins are
+      forfeited."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20757172353622016
+    m_Localized: Press anywhere to continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53358452418506752
+    m_Localized: "\u25CFThis game is a 3-reel video slot (with 3 rows on reels 1
+      and 3, and 4 rows on reel 2), featuring bonus symbols with payouts of up to
+      500x."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53359824153047040
+    m_Localized: "\u25CFThe game features 10 fixed paylines, with a bet multiplier
+      ranging from 1x to 10x and a bet size between 0.02 and 1.00."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53360034635804672
+    m_Localized: "\u25CFThe bet size can be set in the \"Bet Size\" option."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53361307523182592
+    m_Localized: "\u25CFThe bet multiplier can be set in the \"Bet Multiplier\" option."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53361611564085248
+    m_Localized: "\u25CFThe total bet amount can be set in the \"Total Bet Amount\"
+      option."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53361936941412352
+    m_Localized: "\u25CFThe \"Cash Wallet\" displays the bettor's available cash
+      balance."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53362203833364480
+    m_Localized: "\u25CF\"Auto Spin\" allows the game to play automatically for a
+      number of rounds selected by the player."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53362813282512896
+    m_Localized: "\u25CF Winning combinations and prize distributions are based on
+      the \"Payout Table\"."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53362946158063616
+    m_Localized: "\u25CF The reward from a single winning payline equals the symbol
+      payout value shown in the \"Payout Table\" multiplied by the bet size."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53363162282160128
+    m_Localized: "\u25CF Only the highest win per payline is paid."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53363436598030336
+    m_Localized: "\u25CF Wins from different paylines are cumulative."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53363766605869056
+    m_Localized: "\u25CFWild symbols can substitute for all symbols except the bonus
+      symbol."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53364338268532736
+    m_Localized: BONUS SYMBOL
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53365530084208640
+    m_Localized: "\u25CF During any spin, one or more Bonus Symbols may appear on
+      the reels."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53365823924563968
+    m_Localized: "\u25CF The value of each Bonus Symbol ranges from 0.5x to 500x
+      the total bet amount."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53365949753683968
+    m_Localized: "\u25CF When 5 or more Bonus Symbols appear anywhere on the reels,
+      the prizes for all Bonus Symbols are awarded."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53366288485675008
+    m_Localized: FREE GAME MODE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53366537258233856
+    m_Localized: "\u25CF During any spin, the Free Game mode with 8 spins may be
+      randomly triggered while the reels are spinning."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53366940481843200
+    m_Localized: "\u25CF During the Free Game mode, only Bonus Symbols will appear
+      on the reels."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53367376823676928
+    m_Localized: MAXIMUM WIN MULTIPLIER
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53367490438983680
+    m_Localized: "\u25CF The maximum win amount is 5,000 times the bet amount."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53367768601030656
+    m_Localized: "\u25CF The spin will end if the total win in the main game or Free
+      Game mode reaches 5,000 times the bet amount."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53388200985194496
+    m_Localized: SYMBOL PAYOUT VALUE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53396614490583040
+    m_Localized: PAYLINE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53399236903661568
+    m_Localized: "\u25CF Only the highest win per payline is paid."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53399253680877568
+    m_Localized: "\u25CF Payline wins are paid out in order from the leftmost to
+      the rightmost reel."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: SlotFramework_LLG
+  m_EditorClassIdentifier: 
+  m_GroupName: SlotFramework_LLG
+  m_GUID: 591783f67f5e0496bac10d8d43c5c0cb
+  m_SerializeEntries:
+  - m_GUID: 88a98b8102b234467a214630c37c0fd9
+    m_Address: LLGView
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e2b7e97f4e386414aaf3ff7d8031672c
+    m_Address: LLGView_Portrait
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f0c724486ec0f4a0088aaec7f60c3cee
+    m_Address: InfoLLGView
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 0921bf18dd66813429d672ea4fde1abe, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 2fb91c4aa22a849d99ddb8d5bd4e024a, type: 2}
+    - {fileID: 11400000, guid: aacb0ab21a3dd4962859650801825ccd, type: 2}

@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98d7afec399ca33419037d8cd76274d1, type: 3}
+  m_Name: PayTableData
+  m_EditorClassIdentifier: 
+  LineBet: 1
+  PayLine: 100
+  BetRatios:
+  - BuyType: 0
+    Ratio: 1
+  - BuyType: 2
+    Ratio: 100
+  - BuyType: 3
+    Ratio: 500
+  SymbolOdds:
+  - Odds: d0070000
+    DisplayEntries: []
+    DisplayMode: 0
+  - Odds: e8030000
+    DisplayEntries: []
+    DisplayMode: 0
+  - Odds: f4010000
+    DisplayEntries: []
+    DisplayMode: 0
+  - Odds: 64000000
+    DisplayEntries: []
+    DisplayMode: 0
+  - Odds: 32000000
+    DisplayEntries: []
+    DisplayMode: 0
+  - Odds: 1e000000
+    DisplayEntries: []
+    DisplayMode: 0
+  - Odds: 14000000
+    DisplayEntries: []
+    DisplayMode: 0
+  - Odds: 000000000000000000000000000000000000000000000000
+    DisplayEntries: []
+    DisplayMode: 0
+  - Odds: 
+    DisplayEntries: []
+    DisplayMode: 0
+  - Odds: 
+    DisplayEntries: []
+    DisplayMode: 0
+  - Odds: 
+    DisplayEntries: []
+    DisplayMode: 0
+  - Odds: 
+    DisplayEntries: []
+    DisplayMode: 0
+  DefaultDisplayMode: 1
+  DefaultDisplayEntries: []

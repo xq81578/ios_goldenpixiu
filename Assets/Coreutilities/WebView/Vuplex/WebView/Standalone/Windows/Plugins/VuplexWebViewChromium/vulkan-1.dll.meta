@@ -1,0 +1,81 @@
+fileFormatVersion: 2
+guid: 41fefff5e8b3e1b4c8aaf41dda698a5b
+PluginImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  iconMap: {}
+  executionOrder: {}
+  defineConstraints: []
+  isPreloaded: 0
+  isOverridable: 0
+  isExplicitlyReferenced: 0
+  validateReferences: 1
+  platformData:
+  - first:
+      : Any
+    second:
+      enabled: 0
+      settings:
+        Exclude Editor: 1
+        Exclude Linux64: 1
+        Exclude OSXUniversal: 1
+        Exclude Win: 1
+        Exclude Win64: 1
+        Exclude WindowsStoreApps: 1
+  - first:
+      Any: 
+    second:
+      enabled: 0
+      settings: {}
+  - first:
+      Editor: Editor
+    second:
+      enabled: 0
+      settings:
+        CPU: AnyCPU
+        DefaultValueInitialized: true
+        OS: AnyOS
+  - first:
+      Standalone: Linux64
+    second:
+      enabled: 0
+      settings:
+        CPU: None
+  - first:
+      Standalone: OSXUniversal
+    second:
+      enabled: 0
+      settings:
+        CPU: None
+  - first:
+      Standalone: Win
+    second:
+      enabled: 0
+      settings:
+        CPU: None
+  - first:
+      Standalone: Win64
+    second:
+      enabled: 0
+      settings:
+        CPU: None
+  - first:
+      Windows Store Apps: WindowsStoreApps
+    second:
+      enabled: 0
+      settings:
+        CPU: X86
+        DontProcess: false
+        PlaceholderPath: 
+        SDK: AnySDK
+        ScriptingBackend: AnyScriptingBackend
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 154144
+  packageName: 3D WebView for Windows and macOS (Web Browser)
+  packageVersion: 4.14.1
+  assetPath: Assets/Vuplex/WebView/Standalone/Windows/Plugins/VuplexWebViewChromium/vulkan-1.dll
+  uploadId: 832448

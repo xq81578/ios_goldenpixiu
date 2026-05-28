@@ -1,0 +1,280 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Common_StringTable Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Common_StringTable
+  m_TableCollectionNameGuidString: 43023e4a62929544a9365bc4db3b898a
+  m_Entries:
+  - m_Id: 1805546227306496
+    m_Key: Btn_Continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799787238199296
+    m_Key: Loading_Volatility
+    m_Metadata:
+      m_Items: []
+  - m_Id: 64539604525506560
+    m_Key: Continue_Hint
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72537864532987904
+    m_Key: Btn_Off
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72537864558153728
+    m_Key: Btn_On
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72473890688929792
+    m_Key: Btn_Cancel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72473890718289920
+    m_Key: Btn_Start
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72473890718289921
+    m_Key: Btn_Confirm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72473890718289922
+    m_Key: Auto_Stop_FG
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72473890718289923
+    m_Key: Auto_Setting
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72473890718289924
+    m_Key: Buy_BuyBonus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72473890718289925
+    m_Key: Buy_Bet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72473890718289926
+    m_Key: Buy_FreeSpins
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72473890718289927
+    m_Key: Buy_SuperFreeSpins
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72473890718289928
+    m_Key: Btn_Buy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69299633465135104
+    m_Key: Buy_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69299633490300928
+    m_Key: Buy_NameSuper
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10910722657685504
+    m_Key: Buy_Costs
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799787238199297
+    m_Key: Info_HowToPlay
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529315334361091
+    m_Key: Info_Spin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529315334361092
+    m_Key: Info_Spin_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529315334361093
+    m_Key: Info_Spin_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529315334361094
+    m_Key: Info_Stop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529315334361095
+    m_Key: Info_Stop_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69304683977576448
+    m_Key: Info_SpaceBar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69304683977576449
+    m_Key: Info_SpaceBar_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529315334361096
+    m_Key: Info_Wallet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529315334361097
+    m_Key: Info_Wallet_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529315334361098
+    m_Key: Info_Bet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529315334361099
+    m_Key: Info_Bet_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529315334361100
+    m_Key: Info_AutoSpin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529315334361101
+    m_Key: Info_AutoSpin_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529315334361102
+    m_Key: Info_AutoSpin_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529315334361103
+    m_Key: Info_Rules
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529315334361104
+    m_Key: Info_Rules_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529315334361105
+    m_Key: Info_Rules_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529315334361106
+    m_Key: Info_MoreSetting
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529315334361107
+    m_Key: Info_MoreSetting_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529315334361108
+    m_Key: Info_Home
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529315334361109
+    m_Key: Info_Home_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529315334361110
+    m_Key: Info_Turbo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529315334361111
+    m_Key: Info_Turbo_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529315334361112
+    m_Key: Info_Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529315334361113
+    m_Key: Info_Sound_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529315334361114
+    m_Key: Info_History
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529315334361115
+    m_Key: Info_History_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529315334361116
+    m_Key: Info_Close
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529315334361117
+    m_Key: Info_Close_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69304683977576450
+    m_Key: Info_Interrupted
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69304683977576451
+    m_Key: Info_Interrupted_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69304683977576452
+    m_Key: Info_General
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69304683977576453
+    m_Key: Info_General_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69304683977576454
+    m_Key: Info_General_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69304683977576455
+    m_Key: Info_General_3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69304683977576456
+    m_Key: Info_General_4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69304683977576457
+    m_Key: Info_General_5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69304683977576458
+    m_Key: Info_General_6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529315334361118
+    m_Key: Switch_Combo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529315334361119
+    m_Key: Switch_Reel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72543472169508864
+    m_Key: Extra_Bet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72568262003515392
+    m_Key: Free_Game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72568299429289984
+    m_Key: Super_Free_Game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 119260128435924992
+    m_Key: Buy_Free_Text
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 3764510365708451993
+  references:
+    version: 2
+    RefIds:
+    - rid: 3764510365708451993
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1745208773055

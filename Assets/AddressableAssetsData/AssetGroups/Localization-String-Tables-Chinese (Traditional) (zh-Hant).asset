@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Localization-String-Tables-Chinese (Traditional) (zh-Hant)
+  m_EditorClassIdentifier: 
+  m_GroupName: Localization-String-Tables-Chinese (Traditional) (zh-Hant)
+  m_GUID: 9e8e32691dd7bcd42a3d4ccbc78ada2c
+  m_SerializeEntries:
+  - m_GUID: 33ec9950af18db74c880e8b0d2ee3a0e
+    m_Address: Common_StringTable_zh-Hant
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-zh-Hant
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6cb61e29df3f6da4c9c026fad997a7d7
+    m_Address: Dialog_StringTable_zh-Hant
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-zh-Hant
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cffb25bed3b5dbb42963a54799666026
+    m_Address: Slot001_StringTable_zh-Hant
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-zh-Hant
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 1
+  m_Settings: {fileID: 11400000, guid: 0921bf18dd66813429d672ea4fde1abe, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 86e5c977737e61c4eba494e31a92c2d6, type: 2}
+    - {fileID: 11400000, guid: 72b4b9041740db94bb3f565207926c52, type: 2}

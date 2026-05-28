@@ -1,0 +1,192 @@
+body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+#unity-container {
+  width: 100%;
+  height: 100%;
+  background: url("bg.png") no-repeat center center;
+  background-size: cover;
+}
+
+#unity-canvas {
+  width: 100%;
+  height: 100%;
+}
+
+#custom-logo,
+#custom-loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#custom-logo {
+  /* background-image: url('Loading Icon.png'); */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 0;
+  width: clamp(160px, 40vmin, 300px);
+  height: clamp(160px, 40vmin, 300px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+  box-sizing: border-box;
+}
+
+#custom-loader {
+  margin-top: 250px;
+  width: 45%;
+  height: 20px;
+  background: rgb(0, 0, 0);
+}
+
+#custom-loader .fill {
+  width: 0%;
+  height: 100%;
+  background: rgb(255, 255, 255);
+}
+
+#custom-loader .label {
+  position: relative;
+  top: -30px;
+  font-size: 25px;
+  text-align: center;
+  font-family: sans-serif, calibri;
+  color: white;
+}
+
+.dots-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+}
+
+.dot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: clamp(42px, 7vmin, 80px);
+
+  margin-right: clamp(6px, 1.8vmin, 10px);
+}
+
+.dot:last-child {
+  margin-right: 0;
+}
+.dot-g {
+  position: relative;
+}
+.dot-g .g {
+  height: 100%;
+  width: auto;
+  display: block;
+}
+.dot-g .c {
+  position: absolute;
+
+  height: 220%;
+  width: auto;
+  max-width: none; /* 不受 .dot img 的 max-width 限制，保持原始寬高比由 height 控制放大 */
+
+  left: 45%; /* 横向位置 */
+  top: 50%; /* 纵向位置 */
+  transform: translate(-50%, -50%);
+
+  pointer-events: none;
+  animation: none !important;
+}
+
+.dot img {
+  height: 100%; /* ✅ 高度统一 */
+  width: auto; /* ✅ 宽度 = 图片真实比例 */
+  max-width: 100%;
+  display: block;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+/* 小屏/H5：进一步收缩，避免 .dot-g .c 的 220% 造成溢出 */
+@media (max-width: 480px), (max-height: 520px) {
+  #custom-logo {
+    width: clamp(140px, 55vw, 240px);
+    height: clamp(140px, 55vw, 240px);
+  }
+
+  .dot {
+    height: clamp(34px, 10vw, 62px);
+    margin-right: clamp(4px, 2.2vw, 8px);
+  }
+
+  .dot-g .c {
+    height: 220%;
+  }
+}
+
+/* 错峰动画 */
+.dot:nth-child(1) img {
+  animation-delay: -0.3s;
+}
+.dot:nth-child(2) img {
+  animation-delay: -0.1s;
+}
+.dot:nth-child(3) img {
+  animation-delay: 0.1s;
+}
+.dot:nth-child(4) img {
+  animation-delay: 0.3s;
+}
+.dot:nth-child(5) img {
+  animation-delay: 0.5s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.95);
+    opacity: 0.6;
+  }
+}
+.loader {
+  --clr: #d4af37;
+  --progress: 0%;
+
+  position: relative;
+  width: 45%;
+  height: 20px;
+
+  outline: 2px solid var(--clr);
+  outline-offset: 5px;
+  border-radius: 999px;
+
+  overflow: hidden;
+  background: transparent;
+}
+
+/* 填充层 */
+.loader::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: var(--progress);
+  height: 100%;
+
+  background-color: var(--clr);
+  transition: width 0.3s ease;
+}

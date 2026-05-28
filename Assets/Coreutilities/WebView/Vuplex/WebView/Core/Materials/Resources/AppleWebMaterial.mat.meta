@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 900c52203be2f403587d07144d3617a5
+timeCreated: 1521940727
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 202522
+  packageName: 2D WebView for WebGL (Web Browser IFrame)
+  packageVersion: 4.14
+  assetPath: Assets/Vuplex/WebView/Core/Materials/Resources/AppleWebMaterial.mat
+  uploadId: 828216

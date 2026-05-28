@@ -1,0 +1,82 @@
+{
+    "MGResult": {
+      "MGTumbleList": [
+        {
+          "TumbleSymbol": [
+            [
+              17,
+              17,
+              13
+            ],
+            [
+              10,
+              17,
+              17,
+              17
+            ],
+            [
+              10,
+              15,
+              13
+            ]
+          ],
+          "LineSymbol": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "LineCount": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "LineWin": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "Win": 1400,
+          "PreReel": [
+            0,
+            0,
+            0
+          ],
+          "ScoreSymbol": [
+            800,
+            50,
+            50,
+            200,
+            300
+          ]
+        }
+      ],
+      "MainWin": 1400
+    },
+    "FGResult": {
+      "FGTumbleList": null,
+      "FreeWin": 0
+    },
+    "TotalWin": 1400,
+    "Extra": null
+  }

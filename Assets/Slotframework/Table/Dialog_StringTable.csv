@@ -1,0 +1,28 @@
+﻿位置,檔案名稱,檔案種類,Key,English(en),Chinese (Traditional)(zh-TW),Chinese (Simplified)(zh-CN),Thai(th),,
+,,,Btn_OK,OK,好,,,,
+視窗標題,,視窗標題,System_Title,System Message,系統提示,,ข้อความจากระบบ,,系統提示訊息共用標題
+Server 錯誤訊息,,內文,Error_Unknown,Unknown error response,發現未知錯誤,,การตอบสนองข้อผิดพลาด ข้อผิดพลาดที่ไม่ทราบสาเหตุ,,發現未知錯誤
+提示訊息,,內文,System_MaxWin,"Congrats! You have reached the max win ""{0}""x.",恭喜！您已達到最高贏取限額『{0}倍』。,,"ยินดีด้วย! คุณได้ชนะสูงสุด ""{0}""x.",,顯示各遊戲最大倍數訊息，{0}代表該遊戲最大變數
+提示訊息,,內文,Error_Balance,"Insufficient balance, please recharge.",餘額不足,,ยอดคงเหลือไม่เพียงพอ โปรดเติมเงิน,,錢包錯誤訊息
+提示訊息,,內文,Error_Network,Network connection error. Please reconnect.,網路連線錯誤，請重新連線,,การเชื่อมต่อเครือข่ายขัดข้อง โปรดเชื่อมต่อใหม่,,斷線錯誤訊息
+提示訊息,,內文,Error_Disconnect,Connection has been interrupted. Please log in again.,連線已中斷，請重新登入,,การเชื่อมต่อขาด กรุณาเข้าสู่ระบบอีกครั้ง,,斷線錯誤訊息
+提示訊息,,內文,Error_Login,Your account has been logged in from another device.,帳號已從其他裝置進行登入,,บัญชีของคุณถูกล็อกอินจากอุปกรณ์อื่น,,斷線錯誤訊息
+遊戲系統錯誤訊息,,內文,Error_Code_1,Game Error {0},遊戲錯誤 {0},,ข้อผิดพลาดของเกม {0},,遊戲命令內容無法解析，{0}代表錯誤代碼。
+遊戲系統錯誤訊息,,內文,Error_Code_2,Game Error {0},遊戲錯誤 {0},,ข้อผิดพลาดของเกม {0},,找不到此遊戲命令，{0}代表錯誤代碼。
+遊戲系統錯誤訊息,,內文,Error_Code_3,Game Error {0},遊戲錯誤 {0},,ข้อผิดพลาดของเกม {0},,遊戲機率無回應，{0}代表錯誤代碼。
+遊戲系統錯誤訊息,,內文,Error_Code_4,"Insufficient balance, please recharge.",餘額不足,,ยอดคงเหลือไม่เพียงพอ โปรดเติมเงิน,,餘額不足
+遊戲系統錯誤訊息,,內文,Error_Code_5,Please login again {0},請重新登入{0},,กรุณาเข้าสู่ระบบอีกครั้ง {0},,token失效
+遊戲系統錯誤訊息,,內文,Error_Code_6,Login error {0},登入異常{0},,เกิดข้อผิดพลาดในการเข้าสู่ระบบ {0},,重複呼叫登入
+遊戲系統錯誤訊息,,內文,Error_Code_7,Duplicate account login,帳號重複登入,,บัญชีถูกเข้าสู่ระบบซ้ำ,,"被踢出遊戲(同帳號後踢前, 或平台踢人)"
+遊戲系統錯誤訊息,,內文,Error_Code_8,Game not found,找不到遊戲,,ไม่พบเกม,,無此遊戲
+遊戲系統錯誤訊息,,內文,Error_Code_9,Platform not found,找不到平台,,ไม่พบแพลตฟอร์ม,,無此平台
+遊戲系統錯誤訊息,,內文,Error_Code_10,Exceeded maximum win/odds,超過最大贏分/倍數,,เกินขีดจำกัดของคะแนนชนะ/อัตราต่อรอง,,超過最大贏分/倍數
+Server 錯誤訊息,,內文,Error_Code_11,"System error {0}, please contact customer support",系統異常{0}，請聯繫客服,,ระบบขัดข้อง {0} กรุณาติดต่อฝ่ายบริการลูกค้า,,Server 錯誤訊息無此幣別(或是平台登入後卻換了幣別下注)
+Server 錯誤訊息,,內文,Error_Code_12,"System error {0}, please contact customer support",系統異常{0}，請聯繫客服,,ระบบขัดข้อง {0} กรุณาติดต่อฝ่ายบริการลูกค้า,,數值不合法
+Server 錯誤訊息,,內文,Error_Code_13,"System error {0}, please contact customer support",系統異常{0}，請聯繫客服,,ระบบขัดข้อง {0} กรุณาติดต่อฝ่ายบริการลูกค้า,,投注額不允許
+提示訊息,,內文,Error_Code_14,Your IP address is outside the service area,您的IP位置不在服務範圍,,ที่อยู่ IP ของคุณอยู่นอกเขตให้บริการ,,不允許的IP位址
+平台系統錯誤訊息,,內文,Error_Code_100,"System error {0}, please contact customer support",系統異常{0}，請聯繫客服,,ระบบขัดข้อง {0} กรุณาติดต่อฝ่ายบริการลูกค้า,,平台API錯誤，{0}代表錯誤代碼。
+機率系統錯誤訊息,,內文,Error_Code_1000,"System error {0}, please contact customer support",系統異常{0}，請聯繫客服,,ระบบขัดข้อง {0} กรุณาติดต่อฝ่ายบริการลูกค้า,,RTP指定錯誤，{0}代表錯誤代碼。
+機率系統錯誤訊息,,內文,Error_Code_1001,"System error {0}, please contact customer support",系統異常{0}，請聯繫客服,,ระบบขัดข้อง {0} กรุณาติดต่อฝ่ายบริการลูกค้า,,購買類型錯誤，{0}代表錯誤代碼。
+機率系統錯誤訊息,,內文,Error_Code_1002,"System error {0}, please contact customer support",系統異常{0}，請聯繫客服,,ระบบขัดข้อง {0} กรุณาติดต่อฝ่ายบริการลูกค้า,,找不到指定的機率設定，{0}代表錯誤代碼。
+機率系統錯誤訊息,,內文,Error_Code_1003,"System error {0}, please contact customer support",系統異常{0}，請聯繫客服,,ระบบขัดข้อง {0} กรุณาติดต่อฝ่ายบริการลูกค้า,,機率產出盤面錯誤，{0}代表錯誤代碼。

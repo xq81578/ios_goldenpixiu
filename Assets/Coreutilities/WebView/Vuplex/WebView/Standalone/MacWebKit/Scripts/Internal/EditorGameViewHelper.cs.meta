@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: f324f19a0d34548098d471e0961cf81e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 154144
+  packageName: 3D WebView for Windows and macOS (Web Browser)
+  packageVersion: 4.14.1
+  assetPath: Assets/Vuplex/WebView/Standalone/MacWebKit/Scripts/Internal/EditorGameViewHelper.cs
+  uploadId: 832448

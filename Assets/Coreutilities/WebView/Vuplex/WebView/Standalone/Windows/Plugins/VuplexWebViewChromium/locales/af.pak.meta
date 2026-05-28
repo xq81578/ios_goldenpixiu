@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 50403d25320e94f4cb5ed81d3898fec8
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 154144
+  packageName: 3D WebView for Windows and macOS (Web Browser)
+  packageVersion: 4.14.1
+  assetPath: Assets/Vuplex/WebView/Standalone/Windows/Plugins/VuplexWebViewChromium/locales/af.pak
+  uploadId: 832448

@@ -1,0 +1,16 @@
+include:
+  - project: 'game_client/unity-ci-templates'
+    ref: main
+    file:
+      - '/gitlab-ci/unity-webgl-pipeline.yml'
+
+variables:
+  UNITY_PATH: 'C:\Program Files\Unity\Hub\Editor\2022.3.62f2\Editor\Unity.exe'
+
+# 仅允许在 GitLab 网页「运行流水线」触发；填写 V、T，可选 DO_UPLOAD（默认 true）。
+# 与模板中的 workflow 一致，并确保覆盖旧版 include 里的规则。
+workflow:
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "web"'
+      when: always
+    - when: never

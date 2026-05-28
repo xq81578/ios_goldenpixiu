@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: df6dd7f01400543e8ab5ce3b3c0a937d
+AssemblyDefinitionReferenceImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 135383
+  packageName: "3D WebView for Android\u2122 and iOS (Web Browser)"
+  packageVersion: 4.14
+  assetPath: Assets/Vuplex/WebView/iOS/Scripts/Vuplex.WebView.asmref
+  uploadId: 828202

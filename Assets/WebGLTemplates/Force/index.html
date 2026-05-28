@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+    <title>{{{ PRODUCT_NAME }}} -GoWin</title>
+    <link rel="shortcut icon" href="TemplateData/xiaologo.png"/>
+    <link rel="stylesheet" href="TemplateData/style.css"/>
+</head>
+
+<body bgcolor="black">
+<div id="unity-container" class="unity-desktop">
+    <canvas id="unity-canvas"></canvas>
+    <div id="unity-custom-loading-screen">
+        <div id="custom-logo">
+            <div class="dots-container">
+                <!-- <div class="dot"><img src="TemplateData/bn1.png" /></div> -->
+                <div class="dot dot-g">
+                    <img class="g" src="TemplateData/bn1.png"/>
+                    <img class="c" src="TemplateData/c.png"/>
+                </div>
+                <div class="dot"><img src="TemplateData/bn2.png"/></div>
+                <div class="dot"><img src="TemplateData/bn3.png"/></div>
+                <div class="dot"><img src="TemplateData/bn4.png"/></div>
+                <div class="dot"><img src="TemplateData/bn5.png"/></div>
+            </div>
+        </div>
+        <!-- <div id="custom-loader">
+            <div class="fill"></div>
+            <div class="label"></div>
+          </div> -->
+        <div id="custom-loader" class="loader"></div>
+    </div>
+    <div id="unity-warning"></div>
+    <div id="unity-footer"></div>
+</div>
+<script>
+    var container = document.querySelector("#unity-container");
+    var canvas = document.querySelector("#unity-canvas");
+    var loadingScreen = document.querySelector("#unity-custom-loading-screen");
+    var customLoadingBar = document.querySelector("#custom-loader");
+    var fullscreenButton = document.querySelector("#unity-fullscreen-button");
+    var warningBanner = document.querySelector("#unity-warning");
+
+    // Shows a temporary message banner/ribbon for a few seconds, or
+    // a permanent error message on top of the canvas if type=='error'.
+    // If type=='warning', a yellow highlight color is used.
+    // Modify or remove this function to customize the visually presented
+    // way that non-critical warnings and error messages are presented to the
+    // user.
+    function unityShowBanner(msg, type) {
+        function updateBannerVisibility() {
+            warningBanner.style.display = warningBanner.children.length ? 'block' : 'none';
+        }
+
+        var div = document.createElement('div');
+        div.innerHTML = msg;
+        warningBanner.appendChild(div);
+        if (type == 'error') div.style = 'background: red; padding: 10px;';
+        else {
+            if (type == 'warning') div.style = 'background: yellow; padding: 10px;';
+            setTimeout(function () {
+                warningBanner.removeChild(div);
+                updateBannerVisibility();
+            }, 5000);
+        }
+        updateBannerVisibility();
+    }
+
+    var buildUrl = "Build";
+    var loaderUrl = buildUrl + "/{{{ LOADER_FILENAME }}}";
+    var config = {
+        dataUrl: buildUrl + "/{{{ DATA_FILENAME }}}",
+        frameworkUrl: buildUrl + "/{{{ FRAMEWORK_FILENAME }}}",
+        codeUrl: buildUrl + "/{{{ CODE_FILENAME }}}",
+        #if MEMORY_FILENAME
+        memoryUrl: buildUrl + "/{{{ MEMORY_FILENAME }}}",
+        #endif
+        #if SYMBOLS_FILENAME
+        symbolsUrl: buildUrl + "/{{{ SYMBOLS_FILENAME }}}",
+        #endif
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "{{{ COMPANY_NAME }}}",
+        productName: "{{{ PRODUCT_NAME }}}",
+        productVersion: "{{{ PRODUCT_VERSION }}}",
+    };
+
+    // By default Unity keeps WebGL canvas render target size matched with
+    // the DOM size of the canvas element (scaled by window.devicePixelRatio)
+    // Set this to false if you want to decouple this synchronization from
+    // happening inside the engine, and you would instead like to size up
+    // the canvas DOM size and WebGL render target sizes yourself.
+    // config.matchWebGLToCanvasSize = false;
+
+    if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+        container.className = "unity-mobile";
+        // Avoid draining fillrate performance on mobile devices,
+        // and default/override low DPI mode on mobile browsers.
+        // config.devicePixelRatio = 1;
+    } else {
+        //canvas.style.width = "1600px";
+        //canvas.style.height = "900px";
+    }
+
+    // loadingScreen.style.display = "block";
+
+    function resizeCanvas() {
+        container.style.height = window.innerHeight + 'px';
+        var windowWidth = window.innerWidth;
+        var windowHeight = window.innerHeight;
+        var newWidth = windowWidth;
+        var newHeight = windowHeight;
+
+        if (unityInstance && unityInstance.Module && unityInstance.Module.canvas) {
+            var maxAspect = 21 / 9;
+            var minAspect = 9 / 21;
+            var windowAspect = windowWidth / windowHeight;
+            if (windowAspect > maxAspect) {
+                newWidth = windowHeight * maxAspect;
+                newHeight = windowHeight;
+            } else if (windowAspect < minAspect) {
+                newWidth = windowWidth;
+                newHeight = windowWidth / minAspect;
+            }
+            // 強制取整數，避免臨界點縮放 bug
+            newWidth = Math.round(newWidth);
+            newHeight = Math.round(newHeight);
+            // 只用 flex 置中，不用 absolute/transform
+            canvas.style.position = '';
+            canvas.style.left = '';
+            canvas.style.top = '';
+            canvas.style.transform = '';
+        } else {
+            // loading 
+            canvas.style.position = '';
+            canvas.style.left = '';
+            canvas.style.top = '';
+            canvas.style.transform = '';
+            newWidth = Math.round(newWidth);
+            newHeight = Math.round(newHeight);
+        }
+        canvas.style.width = newWidth + 'px';
+        canvas.style.height = newHeight + 'px';
+
+        // 只設定 CSS 寬高，不動像素寬高，避免 Unity 畫面被放大
+        // 強制 reflow
+        void canvas.offsetHeight;
+    }
+
+    var unityInstance = null;
+    var script = document.createElement("script");
+    script.src = loaderUrl;
+    script.onload = () => {
+        createUnityInstance(canvas, config, (progress) => {
+            unitySetLoaderProgressTo(progress);
+        }).then((instance) => {
+            unityInstance = instance;
+            loadingScreen.style.display = "none";
+            resizeCanvas();  // 在初始化時調整畫布大小
+            window.addEventListener('resize', resizeCanvas);
+            window.addEventListener("orientationchange", resizeCanvas);
+        }).catch((message) => {
+            alert(message);
+        });
+    };
+    document.body.appendChild(script);
+
+    // value - 0 to 1
+    function unitySetLoaderProgressTo(value) {
+        customLoadingBar.style.setProperty(
+            "--progress",
+            (value * 100).toFixed(1) + "%"
+        );
+    }
+
+    function handleMessage(event) {
+        if (!event || !event.data || typeof event.data !== "object") return;
+        if (event.data.type !== "unityInstance") return;
+        if (unityInstance) {
+            unityInstance.SendMessage(
+                event.data.objectName,
+                event.data.functionName,
+            );
+        } else {
+            console.error("Unity Instance 未找到");
+        }
+    }
+
+    // function unitySetLoaderProgressTo(value)
+    // {
+    //   const fill = customLoadingBar.getElementsByClassName("fill")[0];
+    //   const fillText = customLoadingBar.getElementsByClassName("label")[0];
+
+    //   fill.animate(
+    //     [
+    //       { width: (value * 100) + "%" }
+    //     ],
+    //     {
+    //       duration: 300,
+    //       fill: "forwards"
+    //     }
+    //   );
+
+    //   //fillText.textContent = (value * 100).toFixed() + "%";
+    // }
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97269afb30aa84742ae3f3342603618a, type: 3}
+  m_Name: Common_AssetTable_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 52cfc3aa05af0c94baa9f9530b6307c4, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 29670576128
+    m_Localized: '5ca9fed8989a9a34895e57ea761e47bf[tx_win]'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 56399870627840
+    m_Localized: 'bc737a94483b1d948950c63fe38d80e0[tx_double]'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53736521142272
+    m_Localized: '2f3b4797045a5294a87cc3011a4002f0[tx_btnBUYBONUS]'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 46450048403648512
+    m_Localized: 146efac488a0ada49ac4f463a786a96c
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

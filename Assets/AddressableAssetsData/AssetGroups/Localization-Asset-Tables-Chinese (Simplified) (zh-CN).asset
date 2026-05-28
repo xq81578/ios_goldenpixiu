@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Localization-Asset-Tables-Chinese (Simplified) (zh-CN)
+  m_EditorClassIdentifier: 
+  m_GroupName: Localization-Asset-Tables-Chinese (Simplified) (zh-CN)
+  m_GUID: 35594fec4a5ef7f438a079c6cb358f13
+  m_SerializeEntries:
+  - m_GUID: 3dbaa6d5b615b5547aa3eaa8476b5a1c
+    m_Address: Slot001_AssetTable_zh-CN
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-zh-CN
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c5583bc7bd74559489e8591342e141ac
+    m_Address: Common_AssetTable_zh-CN
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-zh-CN
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 1
+  m_Settings: {fileID: 11400000, guid: 0921bf18dd66813429d672ea4fde1abe, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: bbbc60b3ea0ed8c409d18110cc3fa92b, type: 2}
+    - {fileID: 11400000, guid: 814c0f97822ad7d4296b93e75ed82e40, type: 2}

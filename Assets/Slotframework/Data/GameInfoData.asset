@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d5d682f125c24aaa9d45c9ebdc64fd5, type: 3}
+  m_Name: GameInfoData
+  m_EditorClassIdentifier: 
+  _gameID: 0
+  _recordUrl: 
+  _betRange: []
+  _maxWin: 0
+  _clientOptions:
+    DefaultBetIndex: 0
+    IsUfa: 0
+    IsAutoActive: 0
+    IsTurboActive: 0
+    IsBuyBonusActive: 0
+    Platform: 1
+    RTP:
+    - 0

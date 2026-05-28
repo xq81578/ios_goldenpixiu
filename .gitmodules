@@ -1,0 +1,12 @@
+[submodule "Assets/Coreutilities"]
+	path = Assets/Coreutilities
+	url = ssh://git@192.168.1.10:2222/game_client/coreutilities.git
+	branch = main
+[submodule "Assets/Slotframework"]
+	path = Assets/Slotframework
+	url = ssh://git@192.168.1.10:2222/game_client/slotframework.git
+	branch = main
+[submodule "Assets/WebGLTemplates"]
+	path = Assets/WebGLTemplates
+	url = ssh://git@192.168.1.10:2222/game_client/webgltemplates.git
+	branch = main

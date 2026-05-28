@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: SlotFramework_UFA
+  m_EditorClassIdentifier: 
+  m_GroupName: SlotFramework_UFA
+  m_GUID: 5cea27db28790bc40815872ad7284449
+  m_SerializeEntries:
+  - m_GUID: 1f9bb1ee0490545408894d80f3f74025
+    m_Address: Assets/SlotFramework/Prefab/UI/UFA/InfoPageUFAView.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7d40a91609f752140bf3ed3c85d11cc7
+    m_Address: Assets/SlotFramework/Art/UI/UFA
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9a487adccc68492488ffb32aeb2c41f6
+    m_Address: Assets/SlotFramework/Prefab/UI/UFA/UFAView.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a2749353618d533409a3fbaab3394ce0
+    m_Address: Assets/SlotFramework/Art/UI/UFA/UFA Sprite Atlas.spriteatlasv2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: be90033157236874db4fbdb9cc500a59
+    m_Address: Assets/SlotFramework/Prefab/UI/UFA/UFAView_Portrait.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 0921bf18dd66813429d672ea4fde1abe, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: da80e9560e234fd48988963f04548f6f, type: 2}
+    - {fileID: 11400000, guid: bc8d9a59534fe9a49a316915a90b1155, type: 2}

@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: SlotFramework_Common_Assets
+  m_EditorClassIdentifier: 
+  m_GroupName: SlotFramework_Common_Assets
+  m_GUID: eb0c72724aa3f4ba1bc4ee0232a0abf4
+  m_SerializeEntries:
+  - m_GUID: 0defd2a526f56834cad31f85ed112c5d
+    m_Address: Assets/SlotFramework/Art/UI/BottomBar
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2f20f12f8f297f1448876b1f3856d9df
+    m_Address: pic_popupBg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 64eef84483395ee419e39b5b3250e178
+    m_Address: CurrencySetting
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 658b607a7ba166845afbec7de7677bf1
+    m_Address: TMP Materials
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 691c53d2fdd740d438f59cd46e42f0e6
+    m_Address: Common Sprite Atlas
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7ce52fee1819bcb4590c026139ee296a
+    m_Address: PayTableData
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cf2d47faab0d89b47895ebd30b7aca15
+    m_Address: Font
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 0921bf18dd66813429d672ea4fde1abe, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 547a904f923684a839121f83d16decb4, type: 2}
+    - {fileID: 11400000, guid: cf69b598d44f543a5b0160fbf8a9e38c, type: 2}

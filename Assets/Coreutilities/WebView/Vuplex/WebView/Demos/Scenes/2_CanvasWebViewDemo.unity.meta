@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: d5ac12fb2aa3e4f07ba9f38c0ea0bfcf
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 202522
+  packageName: 2D WebView for WebGL (Web Browser IFrame)
+  packageVersion: 4.14
+  assetPath: Assets/Vuplex/WebView/Demos/Scenes/2_CanvasWebViewDemo.unity
+  uploadId: 828216

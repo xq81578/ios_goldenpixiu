@@ -1,0 +1,311 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05bf86d16e8d0ce4faef59c58aa1055c, type: 3}
+  m_Name: CurrencySetting
+  m_EditorClassIdentifier: 
+  DefaultChangeSprite: {fileID: 21300000, guid: ec86fada7b6b51c42a46255974b6fe82, type: 3}
+  Currencies:
+  - Name: None
+    Code: 
+    Symbol: "\u20B1"
+    Color: {r: 0.98039216, g: 0.9411765, b: 0.7058824, a: 1}
+    Sprite: {fileID: 0}
+  - Name: COMBO
+    Code: COM
+    Symbol: 
+    Color: {r: 1, g: 0.9019608, b: 1, a: 1}
+    Sprite: {fileID: 21300000, guid: 8ae5aa78e65913947b188331add71da7, type: 3}
+  - Name: Philippine peso
+    Code: PHP
+    Symbol: "\u20B1"
+    Color: {r: 0.98039216, g: 0.9411765, b: 0.7058824, a: 1}
+    Sprite: {fileID: 0}
+  - Name: United States dollar
+    Code: USD
+    Symbol: $
+    Color: {r: 0.98039216, g: 0.9411765, b: 0.7058824, a: 1}
+    Sprite: {fileID: 0}
+  - Name: New Taiwan dollar
+    Code: TWD
+    Symbol: NT$
+    Color: {r: 0.98039216, g: 0.9411765, b: 0.7058824, a: 1}
+    Sprite: {fileID: 0}
+  - Name: Bangladeshi taka
+    Code: BDT
+    Symbol: "\u09F3"
+    Color: {r: 0.98039216, g: 0.9411765, b: 0.7058824, a: 1}
+    Sprite: {fileID: 0}
+  - Name: Brunei dollar
+    Code: BND
+    Symbol: $
+    Color: {r: 0.98039216, g: 0.9411765, b: 0.7058824, a: 1}
+    Sprite: {fileID: 0}
+  - Name: Brazilian real
+    Code: BRL
+    Symbol: R$
+    Color: {r: 0.98039216, g: 0.9411765, b: 0.7058824, a: 1}
+    Sprite: {fileID: 0}
+  - Name: Renminbi
+    Code: CNY
+    Symbol: "\xA5"
+    Color: {r: 0.98039216, g: 0.9411765, b: 0.7058824, a: 1}
+    Sprite: {fileID: 0}
+  - Name: Euro
+    Code: EUR
+    Symbol: "\u20AC"
+    Color: {r: 0.98039216, g: 0.9411765, b: 0.7058824, a: 1}
+    Sprite: {fileID: 0}
+  - Name: "Hong Kong dollar\t"
+    Code: HKD
+    Symbol: $
+    Color: {r: 0.98039216, g: 0.9411765, b: 0.7058824, a: 1}
+    Sprite: {fileID: 0}
+  - Name: Indian rupee
+    Code: INR
+    Symbol: "\u20A8"
+    Color: {r: 0.98039216, g: 0.9411765, b: 0.7058824, a: 1}
+    Sprite: {fileID: 0}
+  - Name: Japanese yen
+    Code: JPY
+    Symbol: "\xA5"
+    Color: {r: 0.98039216, g: 0.9411765, b: 0.7058824, a: 1}
+    Sprite: {fileID: 0}
+  - Name: South Korean won
+    Code: KRW
+    Symbol: "\u20A9"
+    Color: {r: 0.98039216, g: 0.9411765, b: 0.7058824, a: 1}
+    Sprite: {fileID: 0}
+  - Name: Sri Lankan rupee
+    Code: LKR
+    Symbol: Rs
+    Color: {r: 0.98039216, g: 0.9411765, b: 0.7058824, a: 1}
+    Sprite: {fileID: 0}
+  - Name: Burmese kyat
+    Code: MMK
+    Symbol: K
+    Color: {r: 0.98039216, g: 0.9411765, b: 0.7058824, a: 1}
+    Sprite: {fileID: 0}
+  - Name: Mexican peso
+    Code: MXN
+    Symbol: $
+    Color: {r: 0.98039216, g: 0.9411765, b: 0.7058824, a: 1}
+    Sprite: {fileID: 0}
+  - Name: Malaysian ringgit
+    Code: MYR
+    Symbol: RM
+    Color: {r: 0.98039216, g: 0.9411765, b: 0.7058824, a: 1}
+    Sprite: {fileID: 0}
+  - Name: Pakistani rupee
+    Code: PKR
+    Symbol: "\u20A8"
+    Color: {r: 0.98039216, g: 0.9411765, b: 0.7058824, a: 1}
+    Sprite: {fileID: 0}
+  - Name: Indonesian rupiah
+    Code: IDR
+    Symbol: Rp
+    Color: {r: 0.98039216, g: 0.9411765, b: 0.7058824, a: 1}
+    Sprite: {fileID: 0}
+  - Name: Russian ruble
+    Code: RUB
+    Symbol: "\u20BD"
+    Color: {r: 0.98039216, g: 0.9411765, b: 0.7058824, a: 1}
+    Sprite: {fileID: 0}
+  - Name: Singapore dollar
+    Code: SGD
+    Symbol: $
+    Color: {r: 0.98039216, g: 0.9411765, b: 0.7058824, a: 1}
+    Sprite: {fileID: 0}
+  - Name: Thai baht
+    Code: THB
+    Symbol: "\u0E3F"
+    Color: {r: 0.98039216, g: 0.9411765, b: 0.7058824, a: 1}
+    Sprite: {fileID: 0}
+  - Name: "Vietnamese \u0111\u1ED3ng"
+    Code: VND
+    Symbol: "\u20AB"
+    Color: {r: 0.98039216, g: 0.9411765, b: 0.7058824, a: 1}
+    Sprite: {fileID: 0}
+  - Name: kKHR
+    Code: kKHR
+    Symbol: KHR(k)
+    Color: {r: 0.98039216, g: 0.9411765, b: 0.7058824, a: 1}
+    Sprite: {fileID: 0}
+  - Name: kLAK
+    Code: kLAK
+    Symbol: LAK(k)
+    Color: {r: 0.98039216, g: 0.9411765, b: 0.7058824, a: 1}
+    Sprite: {fileID: 0}
+  - Name: kKRW
+    Code: kKRW
+    Symbol: KRW(K)
+    Color: {r: 0.98039216, g: 0.9411765, b: 0.7058824, a: 1}
+    Sprite: {fileID: 0}
+  - Name: kMMK
+    Code: kMMK
+    Symbol: MMK(K)
+    Color: {r: 0.98039216, g: 0.9411765, b: 0.7058824, a: 1}
+    Sprite: {fileID: 0}
+  - Name: kIDR
+    Code: kIDR
+    Symbol: IDR(K)
+    Color: {r: 0.98039216, g: 0.9411765, b: 0.7058824, a: 1}
+    Sprite: {fileID: 0}
+  - Name: kVND
+    Code: kVND
+    Symbol: VND(K)
+    Color: {r: 0.98039216, g: 0.9411765, b: 0.7058824, a: 1}
+    Sprite: {fileID: 0}
+  - Name: Jordanian dinar
+    Code: AED
+    Symbol: "\u062F.\u0625"
+    Color: {r: 0.98039216, g: 0.9411765, b: 0.7058824, a: 1}
+    Sprite: {fileID: 0}
+  - Name: 'Nepalese rupee '
+    Code: NPR
+    Symbol: "\u20A8"
+    Color: {r: 0.98039216, g: 0.9411765, b: 0.7058824, a: 1}
+    Sprite: {fileID: 0}
+  - Name: Pound sterling
+    Code: GBP
+    Symbol: "\xA3"
+    Color: {r: 0.98039216, g: 0.9411765, b: 0.7058824, a: 1}
+    Sprite: {fileID: 0}
+  - Name: Armenian dram
+    Code: AMD
+    Symbol: "\u058F"
+    Color: {r: 0.98039216, g: 0.9411765, b: 0.7058824, a: 1}
+    Sprite: {fileID: 0}
+  - Name: Australian dollar
+    Code: AUD
+    Symbol: A$
+    Color: {r: 0.98039216, g: 0.9411765, b: 0.7058824, a: 1}
+    Sprite: {fileID: 0}
+  - Name: Argentine peso
+    Code: ARS
+    Symbol: $
+    Color: {r: 0.98039216, g: 0.9411765, b: 0.7058824, a: 1}
+    Sprite: {fileID: 0}
+  - Name: Canadian dollar
+    Code: CAD
+    Symbol: C$
+    Color: {r: 0.98039216, g: 0.9411765, b: 0.7058824, a: 1}
+    Sprite: {fileID: 0}
+  - Name: Swiss franc
+    Code: CHF
+    Symbol: SFr.
+    Color: {r: 0.98039216, g: 0.9411765, b: 0.7058824, a: 1}
+    Sprite: {fileID: 0}
+  - Name: Chilean peso
+    Code: CLP
+    Symbol: $
+    Color: {r: 0.98039216, g: 0.9411765, b: 0.7058824, a: 1}
+    Sprite: {fileID: 0}
+  - Name: Colombian peso
+    Code: COP
+    Symbol: $
+    Color: {r: 0.98039216, g: 0.9411765, b: 0.7058824, a: 1}
+    Sprite: {fileID: 0}
+  - Name: Georgian lari
+    Code: GEL
+    Symbol: "\u20BE"
+    Color: {r: 0.98039216, g: 0.9411765, b: 0.7058824, a: 1}
+    Sprite: {fileID: 0}
+  - Name: Ghanaian cedi
+    Code: GHS
+    Symbol: "GH\xA2"
+    Color: {r: 0.98039216, g: 0.9411765, b: 0.7058824, a: 1}
+    Sprite: {fileID: 0}
+  - Name: Kenyan shilling
+    Code: KES
+    Symbol: Ksh
+    Color: {r: 0.98039216, g: 0.9411765, b: 0.7058824, a: 1}
+    Sprite: {fileID: 0}
+  - Name: Kazakhstani tenge
+    Code: KZT
+    Symbol: "\u20B8"
+    Color: {r: 0.98039216, g: 0.9411765, b: 0.7058824, a: 1}
+    Sprite: {fileID: 0}
+  - Name: Lao kip
+    Code: LAK
+    Symbol: "\u20AD"
+    Color: {r: 1, g: 0.9411765, b: 0.7058824, a: 1}
+    Sprite: {fileID: 0}
+  - Name: Nigerian naira
+    Code: NGN
+    Symbol: "\u20A6"
+    Color: {r: 0.98039216, g: 0.9411765, b: 0.7058824, a: 1}
+    Sprite: {fileID: 0}
+  - Name: Norwegian krone
+    Code: NOK
+    Symbol: kr
+    Color: {r: 0.98039216, g: 0.9411765, b: 0.7058824, a: 1}
+    Sprite: {fileID: 0}
+  - Name: New Zealand dollar
+    Code: NZD
+    Symbol: $
+    Color: {r: 0.98039216, g: 0.9411765, b: 0.7058824, a: 1}
+    Sprite: {fileID: 0}
+  - Name: Omani rial
+    Code: OMR
+    Symbol: "\u0631.\u0639."
+    Color: {r: 0.98039216, g: 0.9411765, b: 0.7058824, a: 1}
+    Sprite: {fileID: 0}
+  - Name: Papua New Guinean kina
+    Code: PGK
+    Symbol: K
+    Color: {r: 0.98039216, g: 0.9411765, b: 0.7058824, a: 1}
+    Sprite: {fileID: 0}
+  - Name: Peruvian sol
+    Code: PEN
+    Symbol: S/.
+    Color: {r: 0.98039216, g: 0.9411765, b: 0.7058824, a: 1}
+    Sprite: {fileID: 0}
+  - Name: "Polish z\u0142oty"
+    Code: PLN
+    Symbol: "z\u0142"
+    Color: {r: 0.98039216, g: 0.9411765, b: 0.7058824, a: 1}
+    Sprite: {fileID: 0}
+  - Name: Saudi riyal
+    Code: SAR
+    Symbol: SR
+    Color: {r: 0.98039216, g: 0.9411765, b: 0.7058824, a: 1}
+    Sprite: {fileID: 0}
+  - Name: Swedish krona
+    Code: SEK
+    Symbol: kr
+    Color: {r: 0.98039216, g: 0.9411765, b: 0.7058824, a: 1}
+    Sprite: {fileID: 0}
+  - Name: Tunisian dinar
+    Code: TND
+    Symbol: DT
+    Color: {r: 0.98039216, g: 0.9411765, b: 0.7058824, a: 1}
+    Sprite: {fileID: 0}
+  - Name: Turkish lira
+    Code: TRY
+    Symbol: TL
+    Color: {r: 0.98039216, g: 0.9411765, b: 0.7058824, a: 1}
+    Sprite: {fileID: 0}
+  - Name: Tanzanian shilling
+    Code: TZS
+    Symbol: tzs
+    Color: {r: 0.98039216, g: 0.9411765, b: 0.7058824, a: 1}
+    Sprite: {fileID: 0}
+  - Name: "Venezuelan bol\xEDvar"
+    Code: VES
+    Symbol: Bs.
+    Color: {r: 0.98039216, g: 0.9411765, b: 0.7058824, a: 1}
+    Sprite: {fileID: 0}
+  - Name: South African rand
+    Code: ZAR
+    Symbol: R
+    Color: {r: 0.98039216, g: 0.9411765, b: 0.7058824, a: 1}
+    Sprite: {fileID: 0}

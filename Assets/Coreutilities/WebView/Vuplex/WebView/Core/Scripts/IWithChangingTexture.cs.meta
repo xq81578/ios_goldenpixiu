@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 749ba8541c9624896bf3788189c9477e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 202522
+  packageName: 2D WebView for WebGL (Web Browser IFrame)
+  packageVersion: 4.14
+  assetPath: Assets/Vuplex/WebView/Core/Scripts/IWithChangingTexture.cs
+  uploadId: 828216

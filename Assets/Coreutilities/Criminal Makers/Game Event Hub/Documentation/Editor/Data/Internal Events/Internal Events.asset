@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bec4c66e027251429d5e26154108337, type: 3}
+  m_Name: Internal Events
+  m_EditorClassIdentifier: 
+  title: Internal Events
+  order: 998
+  documentationItems:
+  - {fileID: 4900000, guid: 3cd06fd50e8510f4bbbf1aaf8404e32e, type: 3}
+  - {fileID: 4900000, guid: 36d8e1a05420e474fb8160456f539f75, type: 3}

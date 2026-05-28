@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bec4c66e027251429d5e26154108337, type: 3}
+  m_Name: Examples
+  m_EditorClassIdentifier: 
+  title: Examples folder
+  order: 3
+  documentationItems:
+  - {fileID: 4900000, guid: 5e9bfeacb36bf7346be100c9c6b7019e, type: 3}
+  - {fileID: 4900000, guid: 2fc101859a6aebe4dbb9eb685c0e3b7c, type: 3}
+  - {fileID: 4900000, guid: c9be7fe183b61eb4fa416da7775d95ef, type: 3}
+  - {fileID: 4900000, guid: e020af5d2b59b594c895090bee2b2f61, type: 3}
+  - {fileID: 4900000, guid: c54b4d298d0594d4b94f94789c1f3261, type: 3}
+  - {fileID: 4900000, guid: e86f4bd6fcb518e42b3ef92abcd4ceb6, type: 3}
+  - {fileID: 4900000, guid: 4440912bd90e6e64298ac64b4896d3b4, type: 3}
+  - {fileID: 4900000, guid: 29f797965272a1548892d938384a3078, type: 3}
+  - {fileID: 4900000, guid: d70eba5e2537528458265f35ebb02c14, type: 3}

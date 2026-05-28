@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 8e663b61b6cf77640a80df7bcfd00bf7
+timeCreated: 1521452119
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 112630
+  packageName: Native Gallery for Android & iOS
+  packageVersion: 1.8.0
+  assetPath: Assets/Plugins/NativeGallery/Editor/NGPostProcessBuild.cs
+  uploadId: 685485

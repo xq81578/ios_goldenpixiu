@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f4e0338e6df8f4bfda34053f66632c38
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 154144
+  packageName: 3D WebView for Windows and macOS (Web Browser)
+  packageVersion: 4.14.1
+  assetPath: Assets/Vuplex/WebView/Standalone/MacWebKit/Materials/Resources/MacWebKitWebMaterial.mat
+  uploadId: 832448

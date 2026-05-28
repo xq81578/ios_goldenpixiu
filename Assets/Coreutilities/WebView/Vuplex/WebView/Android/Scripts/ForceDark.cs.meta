@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 9c73190b6e79b4e5f957e6d87e6f133d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 135383
+  packageName: "3D WebView for Android\u2122 and iOS (Web Browser)"
+  packageVersion: 4.14
+  assetPath: Assets/Vuplex/WebView/Android/Scripts/ForceDark.cs
+  uploadId: 828202

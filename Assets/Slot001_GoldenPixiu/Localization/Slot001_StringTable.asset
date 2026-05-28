@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5be51871efa6c3e4eae1703925c8f5ac, type: 3}
+  m_Name: Slot001_StringTable
+  m_EditorClassIdentifier: 
+  m_SharedTableData: {fileID: 11400000, guid: 4bcad43e7e8dab7409d2be9b0bdd049a, type: 2}
+  m_Tables:
+  - {fileID: 11400000, guid: 94a879d490dd61f419f36f229e1e1d3e, type: 2}
+  - {fileID: 11400000, guid: 29abae35b84a40f499f7fc580d75f608, type: 2}
+  - {fileID: 11400000, guid: bd47955363dd9d64ca2e5f780dff9e7b, type: 2}
+  - {fileID: 11400000, guid: 3566e1ce970c78e4484ef4f755d53ac4, type: 2}
+  - {fileID: 11400000, guid: cffb25bed3b5dbb42963a54799666026, type: 2}
+  - {fileID: 11400000, guid: da0a47175b420024badc04fe949811f2, type: 2}
+  m_Extensions: []
+  m_Group: String Table
+  references:
+    version: 2
+    RefIds: []

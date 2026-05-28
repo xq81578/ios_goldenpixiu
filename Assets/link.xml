@@ -1,0 +1,10 @@
+<linker>
+    <assembly fullname="Assembly-CSharp">
+        <namespace fullname="Slot.Common" preserve="all" />
+        <namespace fullname="Slot.Common.Bottom" preserve="all" />
+        <namespace fullname="Slot001_GoldenPixiu" preserve="all" />
+        <type fullname="ResInfo" preserve="all" />
+    </assembly>
+    <assembly fullname="Newtonsoft.Json" preserve="all" />
+    <assembly fullname="StateMachine.Runtime" preserve="all" />
+</linker>

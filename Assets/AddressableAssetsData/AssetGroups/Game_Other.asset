@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Game_Other
+  m_EditorClassIdentifier: 
+  m_GroupName: Game_Other
+  m_GUID: 868186518d3b12a42b792adf5cbecb1e
+  m_SerializeEntries:
+  - m_GUID: 11401859c5c37bf46928dbfe4b0207d3
+    m_Address: Assets/Slot001_GoldenPixiu/Art/SymbolSpriteAtlas.spriteatlasv2
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - g1
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4ba3e0c6b2528634aac79c016e21b834
+    m_Address: Assets/Slot001_GoldenPixiu/Art/GameSpriteAtlas.spriteatlasv2
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - g1
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c73575419749d5445aa5b15ee7cb09a9
+    m_Address: Assets/Slot001_GoldenPixiu/Art/Font/tx_info.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - g1
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d75cd9f0857a5bb468fbc29dda87f897
+    m_Address: Assets/Slot001_GoldenPixiu/Scene/Slot001_GoldenPixiu.unity
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - g1
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 0921bf18dd66813429d672ea4fde1abe, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 6895361612d102041b78d5c48a03eb71, type: 2}
+    - {fileID: 11400000, guid: a588f488c11d8e743bd4ae9148382fcd, type: 2}

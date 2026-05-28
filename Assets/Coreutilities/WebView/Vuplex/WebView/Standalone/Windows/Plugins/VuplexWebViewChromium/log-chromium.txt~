@@ -1,0 +1,2 @@
+[18188:15996:0528/151329.562:WARNING:chrome\browser\signin\account_consistency_mode_manager.cc:72] Desktop Identity Consistency cannot be enabled as no OAuth client ID and client secret have been configured.
+[18912:11416:0528/151331.200:WARNING:ui\gl\direct_composition_support.cc:1167] QueryInterface to IDCompositionDevice4 failed: 不支持此接口 (0x80004002)

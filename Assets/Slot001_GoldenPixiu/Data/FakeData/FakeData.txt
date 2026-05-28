@@ -1,0 +1,157 @@
+{
+  "MGResult": {
+    "MGTumbleList": [
+      {
+        "TumbleSymbol": [
+          [
+            17,
+            17,
+            13
+          ],
+          [
+            14,
+            15,
+            10,
+            11
+          ],
+          [
+            10,
+            13,
+            13
+          ]
+        ],
+        "LineSymbol": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "LineCount": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "LineWin": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "Win": 0,
+        "PreReel": [
+          0,
+          0,
+          0
+        ],
+        "ScoreSymbol": [
+          50,
+          150
+        ]
+      }
+    ],
+    "MainWin": 0
+  },
+  "FGResult": {
+    "FGTumbleList": [
+      {
+        "TumbleSymbol": [
+          [
+            17,
+            17,
+            17
+          ],
+          [
+            17,
+            17,
+            17,
+            17
+          ],
+          [
+            -1,
+            17,
+            -1
+          ]
+        ],
+        "LineSymbol": null,
+        "LineCount": null,
+        "LineWin": null,
+        "Win": 1800,
+        "PreReel": [
+          1,
+          1,
+          0
+        ],
+        "ScoreSymbol": [
+          50,
+          100,
+          50,
+          1200,
+          50,
+          200,
+          100,
+          50
+        ]
+      },
+      {
+        "TumbleSymbol": [
+          [
+            -1,
+            -1,
+            -1
+          ],
+          [
+            17,
+            17,
+            17,
+            17
+          ],
+          [
+            17,
+            17,
+            17
+          ]
+        ],
+        "LineSymbol": null,
+        "LineCount": null,
+        "LineWin": null,
+        "Win": 950,
+        "PreReel": [
+          1,
+          1,
+          0
+        ],
+        "ScoreSymbol": [
+          100,
+          100,
+          50,
+          50,
+          100,
+          50,
+          500
+        ]
+      }
+    ],
+    "FreeWin": 7150
+  },
+  "TotalWin": 7150,
+  "Extra": null
+}

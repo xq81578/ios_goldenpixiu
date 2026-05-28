@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4db626ad063b13545924a9839ac5fa83, type: 3}
+  m_Name: Slot001_AssetTable
+  m_EditorClassIdentifier: 
+  m_SharedTableData: {fileID: 11400000, guid: ec4a2ae8fca91a145904187a89c36aa5, type: 2}
+  m_Tables:
+  - {fileID: 11400000, guid: 45e9dde2a9b5cab46b6a5d3240bb4406, type: 2}
+  - {fileID: 11400000, guid: 204ac5dbc79dc6044a804e48f852ef65, type: 2}
+  - {fileID: 11400000, guid: 3dbaa6d5b615b5547aa3eaa8476b5a1c, type: 2}
+  - {fileID: 11400000, guid: bb3d78c54b9f6da418c6aa7ce2b09765, type: 2}
+  - {fileID: 11400000, guid: a5fbdb49454edc44f9d07a5be460f10b, type: 2}
+  - {fileID: 11400000, guid: 8950b5bc6b1b05e4ab5d7569e51d6eba, type: 2}
+  m_Extensions: []
+  m_Group: Asset Table
+  references:
+    version: 2
+    RefIds: []

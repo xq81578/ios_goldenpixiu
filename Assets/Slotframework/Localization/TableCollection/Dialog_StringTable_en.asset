@@ -1,0 +1,169 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Dialog_StringTable_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 52a120117f8a6cc4181920525a20b8e9, type: 2}
+  m_Metadata:
+    m_Items:
+    - rid: 9183089280993722458
+  m_TableData:
+  - m_Id: 2157406616358912
+    m_Localized: Unknown error response
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2157406616358913
+    m_Localized: System Message
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2902086870175744
+    m_Localized: Insufficient balance, please recharge.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2902086895341569
+    m_Localized: Network connection error. Please reconnect.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2902086895341571
+    m_Localized: Connection has been interrupted. Please log in again.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2902086895341573
+    m_Localized: Your account has been logged in from another device.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2989805491261440
+    m_Localized: Congrats! You have reached the max win "{0}"x.
+    m_Metadata:
+      m_Items:
+      - rid: 9183089280993722458
+  - m_Id: 2989805516427264
+    m_Localized: Game Error {0}
+    m_Metadata:
+      m_Items:
+      - rid: 9183089280993722458
+  - m_Id: 2989805516427265
+    m_Localized: Game Error {0}
+    m_Metadata:
+      m_Items:
+      - rid: 9183089280993722458
+  - m_Id: 2989805516427266
+    m_Localized: Game Error {0}
+    m_Metadata:
+      m_Items:
+      - rid: 9183089280993722458
+  - m_Id: 2989805516427267
+    m_Localized: Insufficient balance, please recharge.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2989805516427268
+    m_Localized: Please login again {0}
+    m_Metadata:
+      m_Items:
+      - rid: 9183089280993722458
+  - m_Id: 2989805516427269
+    m_Localized: Login error {0}
+    m_Metadata:
+      m_Items:
+      - rid: 9183089280993722458
+  - m_Id: 2989805516427270
+    m_Localized: Duplicate account login
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2989805516427271
+    m_Localized: Game not found
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2989805516427272
+    m_Localized: Platform not found
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2989805516427273
+    m_Localized: Exceeded maximum win/odds
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2989805516427274
+    m_Localized: System error {0}, please contact customer support
+    m_Metadata:
+      m_Items:
+      - rid: 9183089280993722458
+  - m_Id: 2989805516427275
+    m_Localized: System error {0}, please contact customer support
+    m_Metadata:
+      m_Items:
+      - rid: 9183089280993722458
+  - m_Id: 2989805516427276
+    m_Localized: System error {0}, please contact customer support
+    m_Metadata:
+      m_Items:
+      - rid: 9183089280993722458
+  - m_Id: 2989805516427277
+    m_Localized: System error {0}, please contact customer support
+    m_Metadata:
+      m_Items:
+      - rid: 9183089280993722458
+  - m_Id: 2989805516427278
+    m_Localized: System error {0}, please contact customer support
+    m_Metadata:
+      m_Items:
+      - rid: 9183089280993722458
+  - m_Id: 43817586319757312
+    m_Localized: System error {0}, please contact customer support
+    m_Metadata:
+      m_Items:
+      - rid: 9183089280993722458
+  - m_Id: 43817586378477568
+    m_Localized: System error {0}, please contact customer support
+    m_Metadata:
+      m_Items:
+      - rid: 9183089280993722458
+  - m_Id: 43817586378477569
+    m_Localized: System error {0}, please contact customer support
+    m_Metadata:
+      m_Items:
+      - rid: 9183089280993722458
+  - m_Id: 43817586378477570
+    m_Localized: Your IP address is outside the service area
+    m_Metadata:
+      m_Items: []
+  - m_Id: 66272263828135936
+    m_Localized: Confirm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 122181112791576576
+    m_Localized: The result is currently being processed. Please check back later.
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 9183089280993722458
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 
+        m_SharedEntries:
+        - id: 2989805516427268
+        - id: 2989805516427264
+        - id: 2989805516427265
+        - id: 2989805516427266
+        - id: 2989805516427269
+        - id: 2989805516427274
+        - id: 2989805516427275
+        - id: 2989805516427276
+        - id: 2989805516427277
+        - id: 2989805516427278
+        - id: 2989805491261440
+        - id: 43817586319757312
+        - id: 43817586378477568
+        - id: 43817586378477569

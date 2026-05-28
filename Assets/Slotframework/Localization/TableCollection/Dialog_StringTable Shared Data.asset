@@ -1,0 +1,140 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Dialog_StringTable Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Dialog_StringTable
+  m_TableCollectionNameGuidString: 52a120117f8a6cc4181920525a20b8e9
+  m_Entries:
+  - m_Id: 2157406616358913
+    m_Key: System_Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 66272263828135936
+    m_Key: Btn_Confirm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2157406616358912
+    m_Key: Error_Unknown
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2989805491261440
+    m_Key: System_MaxWin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2902086870175744
+    m_Key: Error_Balance
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2902086895341569
+    m_Key: Error_Network
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2902086895341571
+    m_Key: Error_Disconnect
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2902086895341573
+    m_Key: Error_Login
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2989805516427264
+    m_Key: Error_Code_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2989805516427265
+    m_Key: Error_Code_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2989805516427266
+    m_Key: Error_Code_3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2989805516427267
+    m_Key: Error_Code_4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2989805516427268
+    m_Key: Error_Code_5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2989805516427269
+    m_Key: Error_Code_6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2989805516427270
+    m_Key: Error_Code_7
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2989805516427271
+    m_Key: Error_Code_8
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2989805516427272
+    m_Key: Error_Code_9
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2989805516427273
+    m_Key: Error_Code_10
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43817586319757312
+    m_Key: Error_Code_11
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43817586378477568
+    m_Key: Error_Code_12
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43817586378477569
+    m_Key: Error_Code_13
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43817586378477570
+    m_Key: Error_Code_14
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2989805516427274
+    m_Key: Error_Code_100
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2989805516427275
+    m_Key: Error_Code_1000
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2989805516427276
+    m_Key: Error_Code_1001
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2989805516427277
+    m_Key: Error_Code_1002
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2989805516427278
+    m_Key: Error_Code_1003
+    m_Metadata:
+      m_Items: []
+  - m_Id: 122181112791576576
+    m_Key: Error_Code_9004
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 3764510365708451997
+  references:
+    version: 2
+    RefIds:
+    - rid: 3764510365708451997
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1745210917446

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: ca75543f7024145ae83db30fc68ef22b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 202522
+  packageName: 2D WebView for WebGL (Web Browser IFrame)
+  packageVersion: 4.14
+  assetPath: Assets/Vuplex/WebView/WebGL/Scripts/Internal/WebGLWebPluginRegistrant.cs
+  uploadId: 828216

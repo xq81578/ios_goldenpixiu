@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 1c125bc5ca7fb794495023d7a4045a6a
+AssemblyDefinitionImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 112630
+  packageName: Native Gallery for Android & iOS
+  packageVersion: 1.8.0
+  assetPath: Assets/Plugins/NativeGallery/NativeGallery.Runtime.asmdef
+  uploadId: 685485

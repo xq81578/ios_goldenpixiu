@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 6e30a287c37c64ea8a78626f476223bb
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 202522
+  packageName: 2D WebView for WebGL (Web Browser IFrame)
+  packageVersion: 4.14
+  assetPath: Assets/Vuplex/WebView/Core/Shaders/AndroidWebShader.shader
+  uploadId: 828216

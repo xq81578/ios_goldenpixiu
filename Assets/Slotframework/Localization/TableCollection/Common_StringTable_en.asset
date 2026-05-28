@@ -1,0 +1,331 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Common_StringTable_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 43023e4a62929544a9365bc4db3b898a, type: 2}
+  m_Metadata:
+    m_Items:
+    - rid: 5660189767302643779
+  m_TableData:
+  - m_Id: 1799787238199297
+    m_Localized: How to Play
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799787238199296
+    m_Localized: Volatility
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1805546227306496
+    m_Localized: Continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529315334361091
+    m_Localized: Spin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529315334361092
+    m_Localized: Click / tap to start at the current Bet.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529315334361093
+    m_Localized: Click / tap the button or the game area during a spin stop to stop
+      the reels.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529315334361094
+    m_Localized: Stop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529315334361095
+    m_Localized: Click / tap to stop normal Spin or Auto Spin. The number on the
+      button indicates the remaining number of spins for Auto Spin.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529315334361096
+    m_Localized: Balance
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529315334361097
+    m_Localized: "Your current balance is shown in the BALANCE display. \nBalance,
+      bets and winnings are presented in the player's chosen currency."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529315334361098
+    m_Localized: Bet Amount
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529315334361099
+    m_Localized: "Click / tap to display the Bet Options.\nThe current bet level
+      is shown in the BET display. \nChange the bet by clicking on the arrows and
+      choosing the bet level of your choice."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529315334361100
+    m_Localized: Auto Spin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529315334361101
+    m_Localized: Auto Spin automatically plays the game for a selected number of
+      spins.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529315334361102
+    m_Localized: Click / tap on the values to select number of Auto Spins.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529315334361103
+    m_Localized: Rules
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529315334361104
+    m_Localized: Click / tap to show winning combinations and paytable.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529315334361105
+    m_Localized: Click / tap to show the game rules and button functions.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529315334361106
+    m_Localized: More Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529315334361107
+    m_Localized: Click / tap to access additional settings.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529315334361108
+    m_Localized: Home
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529315334361109
+    m_Localized: Click / tap to back the lobby.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529315334361110
+    m_Localized: Turbo Spin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529315334361111
+    m_Localized: Click / tap to enable or disable the Turbo Spin to reduce the duration
+      of reel spins in the main game.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529315334361112
+    m_Localized: Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529315334361113
+    m_Localized: Click / tap to turn sound ON or OFF.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529315334361114
+    m_Localized: History
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529315334361115
+    m_Localized: Click / tap to shows details of the previous games played. Scroll
+      down to the end to load more records.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529315334361116
+    m_Localized: Close
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529315334361117
+    m_Localized: Click / tap to return to the game.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529315334361118
+    m_Localized: Do you want switch to Combo Coin? The current balance of Combo Coin
+      is
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529315334361119
+    m_Localized: Do you want switch to Reel? The current balance of Reel is
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10910722657685504
+    m_Localized: This Bonus costs
+    m_Metadata:
+      m_Items: []
+  - m_Id: 64539604525506560
+    m_Localized: Press anywhere to continue.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69299633465135104
+    m_Localized: BUY FREE SPINS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69299633490300928
+    m_Localized: BUY SUPER FREE SPINS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69304683977576458
+    m_Localized: 'Misuse or malfunction voids all pays and plays.
+
+      Any visual
+      representation of a physical device (a reel, a wheel of fortune or similar)
+      does not represent a "real" physical device and the probabilities of it stopping
+      on any particular position is determined by the game''s random number generator,
+      and not the number of positions on each device.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69304683977576457
+    m_Localized: The allowed bet levels for this game are between {0} and {1}. Feature
+      buys can exceed this limit.
+    m_Metadata:
+      m_Items:
+      - rid: 5660189767302643779
+  - m_Id: 69304683977576456
+    m_Localized: The RTP of the game when using the "EXTRA BET" is {0}%
+    m_Metadata:
+      m_Items:
+      - rid: 5660189767302643779
+  - m_Id: 69304683977576455
+    m_Localized: The RTP of the game when using "{0}" is {1}%.
+    m_Metadata:
+      m_Items:
+      - rid: 5660189767302643779
+  - m_Id: 69304683977576454
+    m_Localized: The symbol payouts displayed above reflect the currently selected
+      bet level. The theoretical payout for this game is {0}%. The RTP was calculated
+      by simulating 10,000,000,000 rounds.
+    m_Metadata:
+      m_Items:
+      - rid: 5660189767302643779
+  - m_Id: 69304683977576453
+    m_Localized: 'All wins are multiplied by base bet.
+
+      All values are expressed
+      as actual wins in coins.
+
+      When winning with multiple symbols, all wins
+      are added to the total win.
+
+      Free spins win is awarded to the player
+      after the round completes.
+
+      Free spins total win in the history contains
+      the whole win of the cycle.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69304683977576452
+    m_Localized: General terms and conditions
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69304683977576451
+    m_Localized: "All game rounds may be reviewed in History.\nAny amount wagered
+      on an unfinished game will remain paused until you either complete the game
+      or the game is void as a result of account inactivity or system maintenance.
+      \nAny awards earned on an unfinished round will not be credited.\nGame rounds
+      will never be affected by unforeseen external errors due to hardware, bandwidth,
+      network errors or similar."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69304683977576450
+    m_Localized: Interrupted game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69304683977576449
+    m_Localized: 'Click to start at the current Bet.
+
+      Click the button or the
+      game area during a spin stop to stop the reels.
+
+      Click during a spin
+      to stop the normal Spin or Auto Spin. The number on the button indicates the
+      remaining Auto Spins.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69304683977576448
+    m_Localized: Space Bar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72473890688929792
+    m_Localized: Cancel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72473890718289920
+    m_Localized: Start
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72473890718289921
+    m_Localized: Confirm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72473890718289922
+    m_Localized: Stop if " Free Game " is activated
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72473890718289923
+    m_Localized: AutoSpin Setting
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72473890718289924
+    m_Localized: BUY BONUS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72473890718289925
+    m_Localized: BET
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72473890718289926
+    m_Localized: FREE SPINS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72473890718289927
+    m_Localized: SUPER FREE SPINS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72473890718289928
+    m_Localized: BUY
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72537864532987904
+    m_Localized: OFF
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72537864558153728
+    m_Localized: ON
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72543472169508864
+    m_Localized: EXTRA BET
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72568262003515392
+    m_Localized: FREE GAME
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72568299429289984
+    m_Localized: SUPER FREE GAME
+    m_Metadata:
+      m_Items: []
+  - m_Id: 119260128435924992
+    m_Localized: All multipliers in the free spins will start from x2
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 5660189767302643779
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 
+        m_SharedEntries:
+        - id: 69304683977576454
+        - id: 69304683977576455
+        - id: 69304683977576456
+        - id: 69304683977576457

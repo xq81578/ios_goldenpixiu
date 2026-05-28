@@ -1,0 +1,519 @@
+{
+    "frames": [
+        {
+            "filename": "新动画0000",
+            "frame": {
+                "x": 0,
+                "y": 0,
+                "w": 52,
+                "h": 97
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 9,
+                "y": 0,
+                "w": 52,
+                "h": 97
+            },
+            "sourceSize": {
+                "w": 70,
+                "h": 97
+            },
+            "pivot": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "新动画0017",
+            "frame": {
+                "x": 0,
+                "y": 99,
+                "w": 68,
+                "h": 77
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 1,
+                "y": 10,
+                "w": 68,
+                "h": 77
+            },
+            "sourceSize": {
+                "w": 70,
+                "h": 97
+            },
+            "pivot": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "新动画0001",
+            "frame": {
+                "x": 0,
+                "y": 178,
+                "w": 54,
+                "h": 60
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 8,
+                "y": 18,
+                "w": 54,
+                "h": 60
+            },
+            "sourceSize": {
+                "w": 70,
+                "h": 97
+            },
+            "pivot": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "新动画0019",
+            "frame": {
+                "x": 56,
+                "y": 178,
+                "w": 50,
+                "h": 60
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 10,
+                "y": 18,
+                "w": 50,
+                "h": 60
+            },
+            "sourceSize": {
+                "w": 70,
+                "h": 97
+            },
+            "pivot": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "新动画0004",
+            "frame": {
+                "x": 54,
+                "y": 0,
+                "w": 54,
+                "h": 77
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 8,
+                "y": 10,
+                "w": 54,
+                "h": 77
+            },
+            "sourceSize": {
+                "w": 70,
+                "h": 97
+            },
+            "pivot": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "新动画0006",
+            "frame": {
+                "x": 70,
+                "y": 79,
+                "w": 54,
+                "h": 77
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 8,
+                "y": 10,
+                "w": 54,
+                "h": 77
+            },
+            "sourceSize": {
+                "w": 70,
+                "h": 97
+            },
+            "pivot": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "新动画0007",
+            "frame": {
+                "x": 110,
+                "y": 0,
+                "w": 54,
+                "h": 77
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 8,
+                "y": 10,
+                "w": 54,
+                "h": 77
+            },
+            "sourceSize": {
+                "w": 70,
+                "h": 97
+            },
+            "pivot": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "新动画0013",
+            "frame": {
+                "x": 108,
+                "y": 158,
+                "w": 54,
+                "h": 77
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 8,
+                "y": 10,
+                "w": 54,
+                "h": 77
+            },
+            "sourceSize": {
+                "w": 70,
+                "h": 97
+            },
+            "pivot": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "新动画0010",
+            "frame": {
+                "x": 126,
+                "y": 79,
+                "w": 53,
+                "h": 77
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 8,
+                "y": 10,
+                "w": 53,
+                "h": 77
+            },
+            "sourceSize": {
+                "w": 70,
+                "h": 97
+            },
+            "pivot": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "新动画0012",
+            "frame": {
+                "x": 166,
+                "y": 0,
+                "w": 53,
+                "h": 77
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 8,
+                "y": 10,
+                "w": 53,
+                "h": 77
+            },
+            "sourceSize": {
+                "w": 70,
+                "h": 97
+            },
+            "pivot": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "新动画0016",
+            "frame": {
+                "x": 164,
+                "y": 158,
+                "w": 70,
+                "h": 76
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 10,
+                "w": 70,
+                "h": 76
+            },
+            "sourceSize": {
+                "w": 70,
+                "h": 97
+            },
+            "pivot": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "新动画0015",
+            "frame": {
+                "x": 181,
+                "y": 79,
+                "w": 63,
+                "h": 76
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 3,
+                "y": 10,
+                "w": 63,
+                "h": 76
+            },
+            "sourceSize": {
+                "w": 70,
+                "h": 97
+            },
+            "pivot": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "新动画0014",
+            "frame": {
+                "x": 221,
+                "y": 0,
+                "w": 58,
+                "h": 76
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 6,
+                "y": 10,
+                "w": 58,
+                "h": 76
+            },
+            "sourceSize": {
+                "w": 70,
+                "h": 97
+            },
+            "pivot": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "新动画0008",
+            "frame": {
+                "x": 236,
+                "y": 157,
+                "w": 58,
+                "h": 76
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 6,
+                "y": 10,
+                "w": 58,
+                "h": 76
+            },
+            "sourceSize": {
+                "w": 70,
+                "h": 97
+            },
+            "pivot": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "新动画0018",
+            "frame": {
+                "x": 246,
+                "y": 78,
+                "w": 57,
+                "h": 76
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 6,
+                "y": 10,
+                "w": 57,
+                "h": 76
+            },
+            "sourceSize": {
+                "w": 70,
+                "h": 97
+            },
+            "pivot": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "新动画0009",
+            "frame": {
+                "x": 281,
+                "y": 0,
+                "w": 54,
+                "h": 76
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 8,
+                "y": 10,
+                "w": 54,
+                "h": 76
+            },
+            "sourceSize": {
+                "w": 70,
+                "h": 97
+            },
+            "pivot": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "新动画0002",
+            "frame": {
+                "x": 337,
+                "y": 0,
+                "w": 30,
+                "h": 50
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 20,
+                "y": 23,
+                "w": 30,
+                "h": 50
+            },
+            "sourceSize": {
+                "w": 70,
+                "h": 97
+            },
+            "pivot": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "新动画0003",
+            "frame": {
+                "x": 337,
+                "y": 52,
+                "w": 27,
+                "h": 32
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 21,
+                "y": 32,
+                "w": 27,
+                "h": 32
+            },
+            "sourceSize": {
+                "w": 70,
+                "h": 97
+            },
+            "pivot": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "新动画0011",
+            "frame": {
+                "x": 305,
+                "y": 86,
+                "w": 53,
+                "h": 76
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 8,
+                "y": 10,
+                "w": 53,
+                "h": 76
+            },
+            "sourceSize": {
+                "w": 70,
+                "h": 97
+            },
+            "pivot": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "新动画0005",
+            "frame": {
+                "x": 296,
+                "y": 164,
+                "w": 50,
+                "h": 76
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 10,
+                "y": 10,
+                "w": 50,
+                "h": 76
+            },
+            "sourceSize": {
+                "w": 70,
+                "h": 97
+            },
+            "pivot": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        }
+    ],
+    "meta": {
+        "app": "TextureAtlas-to-GIF",
+        "version": "1.0",
+        "image": "generalNum1.png",
+        "format": "RGBA8888",
+        "size": {
+            "w": 367,
+            "h": 240
+        },
+        "scale": "1",
+        "generator": "TextureAtlas Toolbox (2.0.5)",
+        "packer": "Maxrects",
+        "heuristic": "Bssf",
+        "efficiency": "89.5%"
+    }
+}

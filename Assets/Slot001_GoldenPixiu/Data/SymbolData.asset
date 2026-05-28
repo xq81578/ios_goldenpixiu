@@ -1,0 +1,132 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30ad98e27b99cf94aba2a6a09b6a2ece, type: 3}
+  m_Name: SymbolData
+  m_EditorClassIdentifier: 
+  _symbols:
+  - Id: 0
+    Name: NN
+    NormalSprite: {fileID: 21300000, guid: 83d2eeebfd0f9f6439f74f5b5c7552a7, type: 3}
+    BackgroundSprite: {fileID: 0}
+    SymbolSpine: {fileID: 0}
+    SymbolSpineAssetReference:
+      m_AssetGUID: 
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+    BulrSprite: {fileID: 21300000, guid: d8031972e7e6c1249bdc197c6aa5e232, type: 3}
+    SymbolType: 3
+  - Id: 10
+    Name: M1
+    NormalSprite: {fileID: 21300000, guid: 99750d8649d9d864e91a0c2200afa164, type: 3}
+    BackgroundSprite: {fileID: 0}
+    SymbolSpine: {fileID: 11400000, guid: 139825d17ad04684fa61892d19badbee, type: 2}
+    SymbolSpineAssetReference:
+      m_AssetGUID: 
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+    BulrSprite: {fileID: 21300000, guid: 265eb46943bece541ae7c79d42f03854, type: 3}
+    SymbolType: 0
+  - Id: 11
+    Name: M2
+    NormalSprite: {fileID: 21300000, guid: 4f933b21e47e9d34ebe88da5b2830373, type: 3}
+    BackgroundSprite: {fileID: 0}
+    SymbolSpine: {fileID: 11400000, guid: 38725e76c79e8544c8a36df33ecb9aa9, type: 2}
+    SymbolSpineAssetReference:
+      m_AssetGUID: 
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+    BulrSprite: {fileID: 21300000, guid: 84b74a40ea1ba444f8c28c8280fcd710, type: 3}
+    SymbolType: 0
+  - Id: 12
+    Name: M3
+    NormalSprite: {fileID: 21300000, guid: e90ae40e90877384eae3ed83d06dc097, type: 3}
+    BackgroundSprite: {fileID: 0}
+    SymbolSpine: {fileID: 11400000, guid: ef2c1672d80152d459f8bfc78a2f7347, type: 2}
+    SymbolSpineAssetReference:
+      m_AssetGUID: 
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+    BulrSprite: {fileID: 21300000, guid: 13d5697eed7c22b45a5a7f30870b66e5, type: 3}
+    SymbolType: 0
+  - Id: 13
+    Name: M4
+    NormalSprite: {fileID: 21300000, guid: d9c68700888627442be86d1f4cfed6a0, type: 3}
+    BackgroundSprite: {fileID: 0}
+    SymbolSpine: {fileID: 11400000, guid: 6f097962f70cc054486ddacd6e6b127e, type: 2}
+    SymbolSpineAssetReference:
+      m_AssetGUID: 
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+    BulrSprite: {fileID: 21300000, guid: eea6ce9ae1ae6544695c802d93cefcf7, type: 3}
+    SymbolType: 0
+  - Id: 14
+    Name: M5
+    NormalSprite: {fileID: 21300000, guid: ce8a7ec9882fa6b4a824e2316c2eae84, type: 3}
+    BackgroundSprite: {fileID: 0}
+    SymbolSpine: {fileID: 11400000, guid: 78d2c695514fd7244b5ce35e4d1d28a1, type: 2}
+    SymbolSpineAssetReference:
+      m_AssetGUID: 
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+    BulrSprite: {fileID: 21300000, guid: d9fb25f923700864abcf0935dc973ed4, type: 3}
+    SymbolType: 0
+  - Id: 15
+    Name: M6
+    NormalSprite: {fileID: 21300000, guid: 73faa36bd0aee1f488441d72e01713b2, type: 3}
+    BackgroundSprite: {fileID: 0}
+    SymbolSpine: {fileID: 11400000, guid: 2a496166fc24b6c40a6894cc7cd01861, type: 2}
+    SymbolSpineAssetReference:
+      m_AssetGUID: 
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+    BulrSprite: {fileID: 21300000, guid: f5885a4b27dbb894ab97305b40978645, type: 3}
+    SymbolType: 0
+  - Id: 16
+    Name: WW
+    NormalSprite: {fileID: 21300000, guid: 30f39808f13c7f1479ac9ec8a80dfd9f, type: 3}
+    BackgroundSprite: {fileID: 0}
+    SymbolSpine: {fileID: 11400000, guid: 508506e4dfce0194ab620c0d16fa0c52, type: 2}
+    SymbolSpineAssetReference:
+      m_AssetGUID: 
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+    BulrSprite: {fileID: 21300000, guid: b93d6da8fa20406419161008d3f1ca44, type: 3}
+    SymbolType: 2
+  - Id: 17
+    Name: SS
+    NormalSprite: {fileID: 21300000, guid: 182006f31a3b75e4f8b026cd308f02a3, type: 3}
+    BackgroundSprite: {fileID: 0}
+    SymbolSpine: {fileID: 11400000, guid: eb3b9e3038408584fafe9987773b3a26, type: 2}
+    SymbolSpineAssetReference:
+      m_AssetGUID: 
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+    BulrSprite: {fileID: 21300000, guid: a61c77b740b8801439163d38059e9bcc, type: 3}
+    SymbolType: 1

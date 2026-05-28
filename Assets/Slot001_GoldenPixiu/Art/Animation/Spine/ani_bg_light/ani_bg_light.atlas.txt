@@ -1,0 +1,8 @@
+ani_bg_light.png
+size:1024,1024
+filter:Linear,Linear
+pma:true
+G2
+bounds:2,68,644,638
+L_Po
+bounds:2,2,64,64

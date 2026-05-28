@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 9a037893ae9a847dc90611c9a8071d21
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 202522
+  packageName: 2D WebView for WebGL (Web Browser IFrame)
+  packageVersion: 4.14
+  assetPath: Assets/Vuplex/WebView/WebGL/LICENSE_WebGL.txt
+  uploadId: 828216

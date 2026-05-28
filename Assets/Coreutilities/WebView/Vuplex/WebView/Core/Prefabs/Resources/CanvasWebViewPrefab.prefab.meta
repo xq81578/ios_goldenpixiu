@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 3e10f3b6a733e441c8352020cff2f1f6
+timeCreated: 1583351967
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 202522
+  packageName: 2D WebView for WebGL (Web Browser IFrame)
+  packageVersion: 4.14
+  assetPath: Assets/Vuplex/WebView/Core/Prefabs/Resources/CanvasWebViewPrefab.prefab
+  uploadId: 828216

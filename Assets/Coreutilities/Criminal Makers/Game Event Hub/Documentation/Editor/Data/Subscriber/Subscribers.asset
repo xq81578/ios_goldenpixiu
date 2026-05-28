@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bec4c66e027251429d5e26154108337, type: 3}
+  m_Name: Subscribers
+  m_EditorClassIdentifier: 
+  title: Subscribers
+  order: 5
+  documentationItems:
+  - {fileID: 4900000, guid: d6c3da36007e5484da752d39cc1df945, type: 3}
+  - {fileID: 4900000, guid: 22d5c4ce99e051d478e0008fece73943, type: 3}
+  - {fileID: 4900000, guid: 8be19126a544ae84fab59f1441e0d2b2, type: 3}
+  - {fileID: 4900000, guid: b4e874c25c0f2d94eb9e276b84aed77a, type: 3}
+  - {fileID: 4900000, guid: 84a0679a12efbe3479318443dacaf478, type: 3}

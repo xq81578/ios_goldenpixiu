@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97269afb30aa84742ae3f3342603618a, type: 3}
+  m_Name: Slot001_AssetTable_zh-TW
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: zh-TW
+  m_SharedData: {fileID: 11400000, guid: ec4a2ae8fca91a145904187a89c36aa5, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 429264855040
+    m_Localized: a06d2a8db1d023a44b9fe5632eb3d951[logo]
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1304502853632
+    m_Localized: bfd9006a11bdbe1428d323c23f4e988a[_tx_score_1]
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1339940528128
+    m_Localized: 17f42f0ec3c48b849b163b2cbf2f3483[_tx_score_2]
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1342499053568
+    m_Localized: c2cc7dd89ef616142823e49559375e66[_tx_score_3]
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1349981691904
+    m_Localized: 0677f9dcd5a596340b6285afec82e5e1[tx_congratulation]
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1351638441984
+    m_Localized: 37262a88be452564e832951ac8fc2256[tx_youHaveWon]
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1353848840192
+    m_Localized: 54f01a1adf26e6e4fa6c747a1d5b850a[tx_winFreeSpins]
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+  <title>{{{ PRODUCT_NAME }}} -GoWin</title>
+  <link rel="shortcut icon" href="TemplateData/xiaologo.png" />
+  <link rel="stylesheet" href="TemplateData/style.css" />
+</head>
+
+<body bgcolor="black">
+<div id="unity-container" class="unity-desktop">
+  <canvas id="unity-canvas"></canvas>
+  <div id="unity-custom-loading-screen">
+    <div id="custom-logo">
+      <div class="dots-container">
+        <!-- <div class="dot"><img src="TemplateData/bn1.png" /></div> -->
+        <div class="dot dot-g">
+          <img class="g" src="TemplateData/bn1.png" />
+          <img class="c" src="TemplateData/c.png" />
+        </div>
+        <div class="dot"><img src="TemplateData/bn2.png" /></div>
+        <div class="dot"><img src="TemplateData/bn3.png" /></div>
+        <div class="dot"><img src="TemplateData/bn4.png" /></div>
+        <div class="dot"><img src="TemplateData/bn5.png" /></div>
+      </div>
+    </div>
+    <!-- <div id="custom-loader">
+        <div class="fill"></div>
+        <div class="label"></div>
+      </div> -->
+    <div id="custom-loader" class="loader"></div>
+  </div>
+  <div id="unity-warning"></div>
+  <div id="unity-footer"></div>
+</div>
+<script>
+  var container = document.querySelector("#unity-container");
+  var canvas = document.querySelector("#unity-canvas");
+  var loadingScreen = document.querySelector(
+          "#unity-custom-loading-screen",
+  );
+  var fullscreenButton = document.querySelector("#unity-fullscreen-button");
+  var warningBanner = document.querySelector("#unity-warning");
+  var customLoadingBar = document.querySelector("#custom-loader");
+
+  // Shows a temporary message banner/ribbon for a few seconds, or
+  // a permanent error message on top of the canvas if type=='error'.
+  // If type=='warning', a yellow highlight color is used.
+  // Modify or remove this function to customize the visually presented
+  // way that non-critical warnings and error messages are presented to the
+  // user.
+  function unityShowBanner(msg, type) {
+    function updateBannerVisibility() {
+      warningBanner.style.display = warningBanner.children.length
+              ? "block"
+              : "none";
+    }
+    var div = document.createElement("div");
+    div.innerHTML = msg;
+    warningBanner.appendChild(div);
+    if (type == "error") div.style = "background: red; padding: 10px;";
+    else {
+      if (type == "warning")
+        div.style = "background: yellow; padding: 10px;";
+      setTimeout(function () {
+        warningBanner.removeChild(div);
+        updateBannerVisibility();
+      }, 5000);
+    }
+    updateBannerVisibility();
+  }
+
+  var buildUrl = "Build";
+  var loaderUrl = buildUrl + "/{{{ LOADER_FILENAME }}}";
+  var config = {
+    dataUrl: buildUrl + "/{{{ DATA_FILENAME }}}",
+    frameworkUrl: buildUrl + "/{{{ FRAMEWORK_FILENAME }}}",
+    codeUrl: buildUrl + "/{{{ CODE_FILENAME }}}",
+    streamingAssetsUrl: "StreamingAssets",
+    companyName: "{{{ COMPANY_NAME }}}",
+    productName: "{{{ PRODUCT_NAME }}}",
+    productVersion: "{{{ PRODUCT_VERSION }}}",
+  };
+
+
+  // 手機直橫版區間（寬/高），用於 letterbox 計算；須與 resizeCanvas 內分支一致
+  var FixAspectRatioMax = 0.57;
+  var FixAspectRatioMin = 0.45;
+  function isMobile() {
+    return /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  }
+  // 不让 Unity 自动同步画布和渲染大小（由 resizeCanvas 自行乘 devicePixelRatio）
+  // config.matchWebGLToCanvasSize = false;
+
+  if (isMobile()) {
+    container.className = "unity-mobile";
+    // var meta = document.createElement("meta");
+    // meta.name = "viewport";
+    // meta.content =
+    //   "width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover";
+    // document.getElementsByTagName("head")[0].appendChild(meta);
+  } else {
+    container.className = "unity-desktop";
+  }
+  // loadingScreen.style.display = "block";
+
+  function resizeCanvas() {
+    var baseWidth = 1920;  // 基準寬度
+    var baseHeight = 1080;  // 基準高度
+    var aspectRatio = baseWidth / baseHeight;
+    var windowWidth = window.innerWidth;
+    var windowHeight = window.innerHeight;
+    var windowAspectRatio = windowWidth / windowHeight;
+    var newWidth, newHeight;
+    var unityCanvas = unityInstance ? unityInstance.Module.canvas : document.querySelector("#unity-canvas");
+    if (!unityCanvas) return;
+
+    // 手機版時特別處理，使畫面看起來滿版
+    if (container.className == "unity-mobile") {
+      // windowAspectRatio在0.57 ~ 0.45 之間使用原大小
+      if (windowAspectRatio < FixAspectRatioMax && windowAspectRatio > FixAspectRatioMin) {
+        newWidth = windowWidth;
+        newHeight = windowHeight;
+      }
+      // 如果窗口的寬高比大於基準寬高比，適配高度並且左右加黑邊
+      else if (windowAspectRatio > FixAspectRatioMax) {
+        newWidth = windowHeight * FixAspectRatioMax;
+        newHeight = windowHeight;
+      }
+      // 否則適配寬度並且上下加黑邊
+      else {
+        newWidth = windowWidth;
+        newHeight = windowWidth / FixAspectRatioMin;
+      }
+    } else {
+      // 電腦版時，適配寬度
+      if (windowAspectRatio > aspectRatio) {
+        newWidth = windowHeight * aspectRatio;
+        newHeight = windowHeight;
+      }
+      else {
+        newWidth = windowWidth;
+        newHeight = windowWidth / aspectRatio;
+      }
+    }
+
+    canvas.style.width = newWidth + 'px';
+    canvas.style.height = newHeight + 'px';
+
+    var renderWidth = newWidth * window.devicePixelRatio;
+    var renderHeight = newHeight * window.devicePixelRatio;
+
+    unityCanvas.width = renderWidth;
+    unityCanvas.height = renderHeight;
+
+    if (unityInstance && unityInstance.Module && unityInstance.Module.SetResolution) {
+      unityInstance.Module.SetResolution(renderWidth, renderHeight);
+    }
+  }
+
+  function handleMessage(event) {
+    if (!event || !event.data || typeof event.data !== "object") return;
+    if (event.data.type !== "unityInstance") return;
+    if (unityInstance) {
+      unityInstance.SendMessage(
+              event.data.objectName,
+              event.data.functionName,
+      );
+    } else {
+      console.error("Unity Instance 未找到");
+    }
+  }
+
+  var unityInstance = null;
+  var script = document.createElement("script");
+  script.src = loaderUrl;
+  script.onload = () => {
+    createUnityInstance(canvas, config, (progress) => {
+      unitySetLoaderProgressTo(progress);
+    })
+            .then((instance) => {
+              unityInstance = instance;
+              loadingScreen.style.display = "none";
+              resizeCanvas(); // 在初始化時調整畫布大小
+              window.addEventListener("resize", resizeCanvas);
+              window.addEventListener("orientationchange", resizeCanvas);
+              window.addEventListener("message", handleMessage);
+            })
+            .catch((message) => {
+              alert(message);
+            });
+  };
+  document.body.appendChild(script);
+
+  // value - 0 to 1
+  function unitySetLoaderProgressTo(value) {
+    customLoadingBar.style.setProperty(
+            "--progress",
+            (value * 100).toFixed(1) + "%",
+    );
+  }
+</script>
+</body>
+
+</html>

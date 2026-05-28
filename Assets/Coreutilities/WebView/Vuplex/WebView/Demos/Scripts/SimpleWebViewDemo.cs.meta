@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: ba1523ff3e7124388be5cb698f67d6bb
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 135383
+  packageName: "3D WebView for Android\u2122 and iOS (Web Browser)"
+  packageVersion: 4.14
+  assetPath: Assets/Vuplex/WebView/Demos/Scripts/SimpleWebViewDemo.cs
+  uploadId: 828202

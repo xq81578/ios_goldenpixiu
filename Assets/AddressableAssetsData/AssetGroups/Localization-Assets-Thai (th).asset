@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Localization-Assets-Thai (th)
+  m_EditorClassIdentifier: 
+  m_GroupName: Localization-Assets-Thai (th)
+  m_GUID: 06603ffc534cfa946b245e837e7d17b5
+  m_SerializeEntries:
+  - m_GUID: 04b593e923ac3954091adf80f711b8e8
+    m_Address: tx_winFreeSpins
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-th
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5506a8679eb689648b7880335a40dc73
+    m_Address: tx_youHaveWon
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-th
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8dd529a336a82384d9d5fe9760dd591b
+    m_Address: tx_congratulation
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-th
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b09d2e02e3a46124995a7e4806b5e902
+    m_Address: _tx_score_3
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-th
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 1
+  m_Settings: {fileID: 11400000, guid: 0921bf18dd66813429d672ea4fde1abe, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 071dda960eb047a4a968355b0c57faef, type: 2}
+    - {fileID: 11400000, guid: cc6129366d164fd4096860d0386eb5cf, type: 2}

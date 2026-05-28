@@ -1,0 +1,7 @@
+NullReferenceException: Object reference not set to an instance of an object
+Slot001_GoldenPixiu.GameLogic.GetTotalWin (Slot001_GoldenPixiu.GameData data) (at Assets/Slot001_GoldenPixiu/Script/GameLogic.cs:72)
+Slot001_GoldenPixiu.SlotStateMachine.CheckWin_Enter () (at Assets/Slot001_GoldenPixiu/Script/SlotStateMachine.cs:327)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore+<>c.<ThrowAsync>b__7_0 (System.Object state) (at <1071a2cb0cb3433aae80a793c277a048>:0)
+UnityEngine.UnitySynchronizationContext+WorkRequest.Invoke () (at <b0b044832c86429e90c306261f4bbd83>:0)
+UnityEngine.UnitySynchronizationContext.Exec () (at <b0b044832c86429e90c306261f4bbd83>:0)
+UnityEngine.UnitySynchronizationContext.ExecuteTasks () (at <b0b044832c86429e90c306261f4bbd83>:0)

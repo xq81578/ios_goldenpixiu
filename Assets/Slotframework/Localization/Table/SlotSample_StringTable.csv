@@ -1,0 +1,76 @@
+﻿位置,檔案名稱,檔案種類,Key,English(en),Chinese (Traditional)(zh-Hant),Chinese (Simplified)(zh-Hans),Thai(th)
+Loading畫面,,內文,Loading_1,"RANDOM MULTIPLIER UP TO 1,000X",隨機倍數最高可達 1000 倍,,ตัวคูณแบบสุ่มสูงสุดถึง 1000x
+Loading畫面,,內文,Loading_2,START THE SUPER FREE SPINS WITH 20x INITIAL MULTIPLIER.,超級免費遊戲從 20 倍初始倍數開始,,เริ่มซุปเปอร์ฟรีสปินด้วยตัวคูณเริ่มต้น 20x
+Loading畫面,,內文,Loading_3,"WIN OVER 15,000X BET","獲得超過下注金額 15,000 倍的獎金",,"ชนะได้มากกว่า 15,000 เท่าของเงินเดิมพัน!"
+Buy Bonus視窗,,內文,Buy_Bet,BET,押注,,เดิมพัน
+Buy Bonus視窗,,內文,Buy_Free,All multipliers in the free spins will start from x2,免費旋轉中的所有倍數將從 x2 開始,,ตัวคูณทั้งหมดในฟรีสปินเริ่มต้นที่ x2
+Buy Bonus視窗,,內文,Buy_SuperFree,All multipliers in the SUPER free spins will start from x 20,超級免費旋轉中的所有倍數將從 x20 開始,,ตัวคูณทั้งหมดในซุปเปอร์ฟรีสปินเริ่มต้นที่ x20
+Info畫面,,大標題,Info_GameRule,GAME RULES,遊戲規則,,กติกาเกม
+Info畫面,,內文,Info_GameRule_1,"When identical symbols are connected and meet the winning conditions, the corresponding symbol reward is granted. 
+All symbols must appear in quantities of 8 or more to win. 
+All winnings are displayed as a multiplier of the bet amount.","當相同符號連線並符合中獎條件時，將獲得該符號對應的獎金
+所有符號需出現 8 個或以上才能中獎
+所有獎金均以下注金額的倍數顯示",,"เมื่อสัญลักษณ์เดียวกันเชื่อมต่อและตรงตามเงื่อนไขการชนะ จะได้รับรางวัลตามค่าสัญลักษณ์นั้น
+สัญลักษณ์ทั้งหมดต้องปรากฏตั้งแต่ 8 ตัวขึ้นไปจึงจะชนะ
+การชนะทั้งหมดจะแสดงเป็นตัวคูณของจำนวนเงินเดิมพัน"
+Info畫面,,內文,Info_GameRule_2,"This is the SCATTER symbol.
+SCATTER symbol is present on all reels.","這是 SCATTER 符號
+SCATTER 符號可出現在所有輪軸上",,"นี่คือสัญลักษณ์ สแคตเตอร์ขึ้นไป
+สัญลักษณ์ สแคตเตอร์ขึ้นไป สามารถปรากฏบนทุกวงล้อ"
+Info畫面,,大標題,Info_TumbleFeature,TUMBLE FEATURE,Tumble 機制,,ฟีเจอร์ร่วงหล่น
+Info畫面,,內文,Info_TumbleFeature_1,"The TUMBLE FEATURE means that after every spin, winning combinations are paid and all winning symbols disappear. 
+The remaining symbols fall to the bottom of the screen and the empty positions are replaced with symbols coming from above. 
+Tumbling will continue until no more winning combinations appear as a result of a tumble. 
+There's no limit to the number of possible tumbles. 
+All wins are added to the player's balance after all of the tumbles resulted from a base spin have been played.","TUMBLE 機制表示每次旋轉後，若有中獎組合，會先發獎，然後中獎符號消失
+剩下的符號會下落填滿空位，新的符號從上方掉落
+下落會持續直到不再出現新的中獎組合
+Tumble 次數沒有限制
+所有由該次旋轉觸發的 Tumble 完成後，獎金才會加到玩家帳戶",,"ฟีเจอร์ ร่วงหล่น คือหลังจากการหมุนแต่ละครั้ง เมื่อมีการชนะ รางวัลจะจ่ายและสัญลักษณ์ที่ชนะจะหายไป
+สัญลักษณ์ที่เหลือจะตกลงมาด้านล่าง และตำแหน่งที่ว่างจะถูกแทนที่ด้วยสัญลักษณ์ใหม่จากด้านบน
+การ ร่วงหล่น จะดำเนินต่อไปจนกว่าจะไม่มีชุดสัญลักษณ์ที่ชนะปรากฏอีก
+ไม่มีการจำกัดจำนวนครั้งในการ ร่วงหล่น
+รางวัลทั้งหมดจะถูกรวมเข้ายอดเงินของผู้เล่นหลังจากจบการ ร่วงหล่น ทั้งหมดที่เกิดจากการหมุนรอบนั้น"
+Info畫面,,內文,Info_TumbleFeature_2,"These are the multiplier symbols. 
+They are present on all reels and can hit randomly during spins and tumbles in both base game and FREE SPINS.
+Whenever a MULTIPLIER symbol hits, it takes a random multiplier value of 2x, 3x, 4x, 5x, 6x, 8x, 10x, 12x, 15x, 20x, 25x, 50x, 100x, 250x, 500× or 1000x.
+When the tumbling sequence ends, the values of all MULTIPLIER symbols on the screen are added together and the total win of the sequence is multiplied by the final value.","這些是倍數符號
+倍數符號可隨機出現在主遊戲或免費遊戲中的旋轉與 Tumble 階段
+倍數符號的數值為隨機，範圍從 2x 到 1000x
+Tumble 結束後，螢幕上所有倍數會相加，並乘上總獎金",,"นี่คือสัญลักษณ์ตัวคูณ
+สัญลักษณ์เหล่านี้สามารถปรากฏบนทุกวงล้อ และสุ่มปรากฏระหว่างการหมุนหรือ Tumble ทั้งในเกมหลักและฟรีสปิน
+เมื่อสัญลักษณ์ตัวคูณปรากฏ จะมีค่าตัวคูณแบบสุ่ม ได้แก่ 2x, 3x, 4x, 5x, 6x, 8x, 10x, 12x, 15x, 20x, 25x, 50x, 100x, 250x, 500x หรือ 1000x
+เมื่อการ ร่วงหล่น สิ้นสุด ค่าของสัญลักษณ์ตัวคูณทั้งหมดบนหน้าจอจะถูกรวมกัน และใช้คูณกับรางวัลรวม"
+Info畫面,,大標題,Info_FreeGameRule,FREE GAME RULE,免費遊戲規則,,กติกาเกมฟรี
+Info畫面,,內文,Info_FreeGameRule_1,"In the base game, 3 or more scatters appearing on the screen will trigger the free game.
+3 Scatters = 10 Free Spins
+4 Scatters = 12 Free Spins
+5 Scatters = 15 Free Spins
+6+ Scatters = 20 Free Spins
+During the free game, if 3 Scatters appear, an additional 10 free spins will be awarded.","主遊戲中出現 3 個或以上 SCATTER 即可觸發免費遊戲
+3 Scatters = 10 Free Spins
+4 Scatters = 12 Free Spins
+5 Scatters = 15 Free Spins
+6+ Scatters = 20 Free Spins
+免費遊戲中再次出現 3 個 SCATTER，將再獲得 10 次免費旋轉",,"นเกมหลัก หากมี สแคตเตอร์ขึ้นไป ปรากฏ 3 ตัวขึ้นไป จะเปิดใช้งานฟรีสปิน
+3 สแคตเตอร์ขึ้นไป = 10 ฟรีสปิน
+4 สแคตเตอร์ขึ้นไป = 12 ฟรีสปิน
+5 สแคตเตอร์ขึ้นไป = 15 ฟรีสปิน
+6 สแคตเตอร์ขึ้นไป ขึ้นไป = 20 ฟรีสปิน
+ระหว่างฟรีเกม หากมี สแคตเตอร์ขึ้นไป 3 ตัว จะได้รับฟรีสปินเพิ่มอีก 10 ครั้ง"
+Info畫面,,大標題,Info_BuyFreeSpins,BUY FREE SPINS,購買免費遊戲功能,,ซื้อฟรีสปิน
+Info畫面,,內文,Info_BuyFreeSpins_1,"The FREE SPINS ROUND can be instantly triggered from the base game by buying it for 100x current total bet.
+The SUPER FREE SPINS ROUND can be instantly triggered from the base game by buying it for 500x current total bet.
+When purchasing super spins, all multipliers in the free game will start from x20.
+An Extra Bet costs an additional 25% of the total bet per spin and doubles the chance to trigger the bonus game.","可用 100 倍下注金額直接購買免費遊戲
+可用 500 倍下注金額直接購買超級免費遊戲
+購買超級免費遊戲時，所有倍數將從 20 倍起跳
+開啟額外投注需多付 25%，並使進入獎勵遊戲的機率翻倍",,"สามารถซื้อรอบฟรีสปินจากเกมหลักได้ทันทีในราคา 100x ของเงินเดิมพันรวม
+สามารถซื้อรอบ ซุปเปอร์ ฟรีสปินได้ในราคา 500x ของเงินเดิมพันรวม
+มื่อซื้อ ซุปเปอร์ ฟรีสปิน ตัวคูณทั้งหมดในฟรีเกมจะเริ่มต้นที่ x20
+การเปิดใช้งาน การเดิมพันพิเศ จะเพิ่มเงินเดิมพันอีก 25% ต่อการหมุน และเพิ่มโอกาสในการเข้าโบนัสเกมเป็น 2 เท่า"
+Info畫面,,大標題,Info_MaxWin,MAX WIN,最高中獎額,,ชนะสูงสุด
+Info畫面,,內文,Info_MaxWin_1,"The maximum win amount is limited to 15,000x bet in both base game and free spins. 
+If the total win of a FREE SPINS round reaches 15,000x bet the round immediately ends, win is awarded and all remaining free spins are forfeited.","主遊戲與免費遊戲的最大中獎為下注額的 15,000 倍
+如果免費遊戲中總獎金達 15,000 倍，該回合會立即結束並發獎，剩餘免費次數作廢",,"จำนวนเงินชนะสูงสุดจำกัดไว้ที่ 15,000x ของเงินเดิมพัน ทั้งในเกมหลักและฟรีสปิน
+หากรางวัลรวมจากรอบฟรีสปินถึง 15,000x ของเงินเดิมพัน ระบบจะจบรอบทันที มอบรางวัล และยกเลิกฟรีสปินที่เหลือทั้งหมด"

@@ -1,0 +1,216 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Slot001_StringTable Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Slot001_StringTable
+  m_TableCollectionNameGuidString: 4bcad43e7e8dab7409d2be9b0bdd049a
+  m_Entries:
+  - m_Id: 36287930368
+    m_Key: Loading_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36313096192
+    m_Key: Loading_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36313096193
+    m_Key: Buy_Bet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36313096194
+    m_Key: Buy_Free
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36313096195
+    m_Key: Info_GameRule
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36313096196
+    m_Key: Info_GameRule_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36313096197
+    m_Key: Info_GameRule_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36313096198
+    m_Key: Info_Cascading
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36313096199
+    m_Key: Info_Cascading_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36313096200
+    m_Key: Info_Cascading_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36313096201
+    m_Key: Info_Cascading_3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36313096202
+    m_Key: Info_Cascading_4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36313096203
+    m_Key: Info_Gold
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36313096204
+    m_Key: Info_Gold_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36313096205
+    m_Key: Info_FreeGame
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36313096206
+    m_Key: Info_FreeGame_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36313096207
+    m_Key: Info_BuyFreeSpins
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36313096208
+    m_Key: Info_BuyFreeSpins_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36313096209
+    m_Key: Info_MaxWin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36313096210
+    m_Key: Info_MaxWin_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20757172353622016
+    m_Key: Win_Press
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53358452418506752
+    m_Key: info1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53359824153047040
+    m_Key: info2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53360034635804672
+    m_Key: info3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53361307523182592
+    m_Key: info4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53361611564085248
+    m_Key: info5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53361936941412352
+    m_Key: info6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53362203833364480
+    m_Key: info7
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53362813282512896
+    m_Key: info8
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53362946158063616
+    m_Key: info9
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53363162282160128
+    m_Key: info10
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53363436598030336
+    m_Key: info11
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53363766605869056
+    m_Key: info12
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53364338268532736
+    m_Key: info_jjfh
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53365530084208640
+    m_Key: info_jj1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53365823924563968
+    m_Key: info_jj2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53365949753683968
+    m_Key: info_jj3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53366288485675008
+    m_Key: info_free
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53366537258233856
+    m_Key: info_free1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53366940481843200
+    m_Key: info_free2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53367376823676928
+    m_Key: info_bs
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53367490438983680
+    m_Key: info_bs1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53367768601030656
+    m_Key: info_bs2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53388200985194496
+    m_Key: info_pf
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53396614490583040
+    m_Key: win_line
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53399236903661568
+    m_Key: win_line1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53399253680877568
+    m_Key: win_line2
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 8334634081559773271
+  references:
+    version: 2
+    RefIds:
+    - rid: 8334634081559773271
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1750908934887

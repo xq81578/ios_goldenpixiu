@@ -1,0 +1,128 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Localization-Assets-Shared
+  m_EditorClassIdentifier: 
+  m_GroupName: Localization-Assets-Shared
+  m_GUID: b940d377fe443724396be0f89bdd9e43
+  m_SerializeEntries:
+  - m_GUID: 0677f9dcd5a596340b6285afec82e5e1
+    m_Address: tx_congratulation
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Locale-zh-CN
+    - Locale-zh-Hans
+    - Locale-zh-Hant
+    - Locale-zh-TW
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 17f42f0ec3c48b849b163b2cbf2f3483
+    m_Address: _tx_score_2
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-zh-CN
+    - Locale-zh-Hans
+    - Locale-zh-Hant
+    - Locale-zh-TW
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 37262a88be452564e832951ac8fc2256
+    m_Address: tx_youHaveWon
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Locale-zh-CN
+    - Locale-zh-Hans
+    - Locale-zh-Hant
+    - Locale-zh-TW
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 43023e4a62929544a9365bc4db3b898a
+    m_Address: Assets/Slotframework/Localization/TableCollection/Common_StringTable
+      Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4bcad43e7e8dab7409d2be9b0bdd049a
+    m_Address: Assets/Slot001_GoldenPixiu/Localization/Slot003_StringTable Shared
+      Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 52a120117f8a6cc4181920525a20b8e9
+    m_Address: Assets/Slotframework/Localization/TableCollection/Dialog_StringTable
+      Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 52cfc3aa05af0c94baa9f9530b6307c4
+    m_Address: Assets/Slotframework/Localization/TableCollection/Common_AssetTable
+      Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 54f01a1adf26e6e4fa6c747a1d5b850a
+    m_Address: tx_winFreeSpins
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Locale-zh-CN
+    - Locale-zh-Hans
+    - Locale-zh-Hant
+    - Locale-zh-TW
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7862433198430904abab596f341f06f6
+    m_Address: _tx_score_2
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Locale-th
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a06d2a8db1d023a44b9fe5632eb3d951
+    m_Address: Assets/Slot001_GoldenPixiu/Art/Sprite/Game/en/logo.png
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-zh-CN
+    - Locale-zh-Hans
+    - Locale-zh-Hant
+    - Locale-zh-TW
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bfd9006a11bdbe1428d323c23f4e988a
+    m_Address: Assets/Slot001_GoldenPixiu/Art/Game/en/_tx_score_1.png
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-th
+    - Locale-zh-CN
+    - Locale-zh-Hans
+    - Locale-zh-Hant
+    - Locale-zh-TW
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c2cc7dd89ef616142823e49559375e66
+    m_Address: _tx_score_3
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Locale-zh-CN
+    - Locale-zh-Hans
+    - Locale-zh-Hant
+    - Locale-zh-TW
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ec4a2ae8fca91a145904187a89c36aa5
+    m_Address: Assets/Slot001_GoldenPixiu/Localization/Slot003_AssetTable Shared
+      Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 1
+  m_Settings: {fileID: 11400000, guid: 0921bf18dd66813429d672ea4fde1abe, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: cfce78306940a904c9186b3969bc403c, type: 2}
+    - {fileID: 11400000, guid: 7df2f2e67d2867f469c31ca158141128, type: 2}

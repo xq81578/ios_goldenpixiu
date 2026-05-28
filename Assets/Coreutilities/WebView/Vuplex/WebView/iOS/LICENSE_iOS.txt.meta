@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: f1e8b66f075b9436a9441fd149c3c8d4
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 135383
+  packageName: "3D WebView for Android\u2122 and iOS (Web Browser)"
+  packageVersion: 4.14
+  assetPath: Assets/Vuplex/WebView/iOS/LICENSE_iOS.txt
+  uploadId: 828202

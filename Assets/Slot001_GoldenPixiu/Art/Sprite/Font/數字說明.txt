@@ -1,0 +1,4 @@
+1.記分板共用數字-tx_marquee
+2.win分共用數字-tx_win1
+3.bet double共用數字-tx_win2
+4.下方黑底計分數字-tx_win2

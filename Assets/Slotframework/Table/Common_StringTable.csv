@@ -1,0 +1,34 @@
+﻿位置,檔案名稱,檔案種類,Key,English(en),Chinese (Traditional)(zh-TW),Chinese (Simplified)(zh-CN),Thai(th)
+Loading畫面,,按鍵,Btn_Continue,Continue,繼續,,ดำเนินการต่อ
+Loading畫面,,波動性,Loading_Volatility,Volatility,波動性,,ความผันผวน
+Buy Bonus視窗,,內文,Buy_Costs,This Bonus costs,免費遊戲需花費,,โบนัสนี้มีค่าใช้จ่าย
+INFO_共用操作,,大標題,Info_HowToPlay,How to Play,遊戲玩法,,วิธีการเล่น
+INFO_共用操作,,小標題,Info_Spin,Spin,,,สปิน
+INFO_共用操作,,內文,Info_Spin_1,Tap to start at the current Bet.,,,แตะเพื่อเริ่มเล่นด้วยเดิมพันปัจจุบัน
+INFO_共用操作,,內文,Info_Spin_2,Tap the button or the game area during a spin stop to stop the reels.,,,แตะปุ่มหรือพื้นที่เกมระหว่างการหมุนเพื่อหยุดวงล้อ
+INFO_共用操作,,小標題,Info_Stop,Stop,,,หยุด
+INFO_共用操作,,內文,Info_Stop_1,Tap to stop Auto Spin. The number on the button indicates the remaining number of spins for Auto Spin.,,,แตะเพื่อหยุดหมุนอัตโนมัติ ตัวเลขบนปุ่มแสดงจำนวนรอบที่เหลืออยู่
+INFO_共用操作,,小標題,Info_Wallet,Wallet Balance,,,ยอดเงินคงเหลือ
+INFO_共用操作,,內文,Info_Wallet_1,Tap to display the balance of available wallets.,,,แตะเพื่อแสดงยอดเงินทั้งหมด
+INFO_共用操作,,小標題,Info_Bet,Bet Amount,,,เงินเดิมพัน
+INFO_共用操作,,內文,Info_Bet_1,Tap to display the Bet Options.,,,แตะเพื่อแสดงตัวเลือกการเดิมพัน
+INFO_共用操作,,小標題,Info_AutoSpin,Auto Spin,,,หมุนอัตโนมัติ
+INFO_共用操作,,內文,Info_AutoSpin_1,Auto Spin automatically plays the game for a selected number of spins.,,,หมุนอัตโนมัติจะเล่นเกมโดยอัตโนมัติตามจำนวนรอบที่เลือกไว้
+INFO_共用操作,,內文,Info_AutoSpin_2,Tap on the values to select number of Auto Spins.,,,แตะที่ตัวเลขเพื่อเลือกจำนวนรอบหมุนอัตโนมัติ
+INFO_共用操作,,小標題,Info_Rules,Rules,,,กฎกติกา
+INFO_共用操作,,內文,Info_Rules_1,Show winning combinations and paytable.,,,แสดงรูปแบบการชนะและตารางการจ่ายเงิน
+INFO_共用操作,,內文,Info_Rules_2,Show the game rules and button functions.,,,แสดงกฎของเกมและการทำงานของปุ่มต่างๆ
+INFO_共用操作,,小標題,Info_MoreSetting,More Settings,,,การตั้งค่าเพิ่มเติม
+INFO_共用操作,,內文,Info_MoreSetting_1,Tap to access additional settings.,,,แตะเพื่อเข้าสู่การตั้งค่าเพิ่มเติม
+INFO_共用操作,,小標題,Info_Home,Home,,,หน้าหลัก
+INFO_共用操作,,內文,Info_Home_1,Tap to back the Combo App lobby.,,,แตะเพื่อกลับไปที่ล็อบบี้ของเกม
+INFO_共用操作,,小標題,Info_Turbo,Turbo Spin,,,โหมดเทอร์โบ
+INFO_共用操作,,內文,Info_Turbo_1,Tap to enble or disable the Turbo Spin to reduce the duration of reel spins in the main game.,,,แตะเพื่อเปิดหรือปิดโหมดเทอร์โบเพื่อลดระยะเวลาการหมุนในเกมหลัก
+INFO_共用操作,,小標題,Info_Sound,Sound,,,เสียง
+INFO_共用操作,,內文,Info_Sound_1,Tap to turn sound ON or OFF.,,,แตะเพื่อเปิดหรือปิดเสียง
+INFO_共用操作,,小標題,Info_History,History,,,ประวัติ
+INFO_共用操作,,內文,Info_History_1,Shows details of the previous games played. Scroll down to the end to load more records.,,,แสดงรายละเอียดของเกมที่เล่นก่อนหน้า เลื่อนลงเพื่อโหลดข้อมูลเพิ่มเติม
+INFO_共用操作,,小標題,Info_Close,Close,,,ปิด
+INFO_共用操作,,內文,Info_Close_1,Tap to return to the Main Game.,,,แตะเพื่อกลับสู่เกมหลัก
+換幣視窗,,內文,Switch_Combo,Do you want switch to Combo Coin? The current balance of Combo Coin is,,,
+換幣視窗,,內文,Switch_Reel,Do you want switch to Reel? The current balance of Reel is,,,
