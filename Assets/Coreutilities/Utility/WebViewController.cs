@@ -112,16 +112,69 @@ public class WebViewController : Singleton<WebViewController>
 
     public void CloseIFrameWebView()
     {
-        _onCloseEvent?.Invoke();
-        _mask.SetActive(false);
-        _canvasWebView.gameObject.SetActive(false);
-        _canvasWebView.WebView.LoadHtml("<html><head></head><body></body></html>");
+        HideWebViewUi();
+
+        if (TryLoadEmptyHtml())
+        {
+            // cleared in-page content while webview is still alive
+        }
+
+        var closeCallback = _onCloseEvent;
+        _onCloseEvent = null;
+        closeCallback?.Invoke();
     }
 
     public void CloseWebView()
     {
         CloseIFrameWebView();
         _headerBar.SetActive(false);
+    }
+
+    /// <summary>
+    /// Call before leaving a scene that used WebView (e.g. bootstrap).
+    /// Vuplex KeyboardManager uses DontDestroyOnLoad and must be destroyed explicitly.
+    /// </summary>
+    public void ReleaseBeforeSceneTransition()
+    {
+        _onCloseEvent = null;
+        HideWebViewUi();
+        _headerBar.SetActive(false);
+
+        if (_canvasWebView != null
+            && _canvasWebView.WebView != null
+            && !_canvasWebView.WebView.IsDisposed)
+        {
+            _canvasWebView.WebView.Dispose();
+        }
+
+        DestroyVuplexKeyboardManager();
+    }
+
+    private void HideWebViewUi()
+    {
+        if (_mask != null)
+            _mask.SetActive(false);
+
+        if (_canvasWebView != null)
+            _canvasWebView.gameObject.SetActive(false);
+    }
+
+    private bool TryLoadEmptyHtml()
+    {
+        if (_canvasWebView == null || _canvasWebView.WebView == null || _canvasWebView.WebView.IsDisposed)
+            return false;
+
+        _canvasWebView.WebView.LoadHtml("<html><head></head><body></body></html>");
+        return true;
+    }
+
+    private static void DestroyVuplexKeyboardManager()
+    {
+        var keyboardManager = GameObject.Find("WebView Keyboard Manager");
+        if (keyboardManager != null)
+        {
+            Destroy(keyboardManager);
+        }
     }
 
 

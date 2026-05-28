@@ -5,6 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 1
+    path: Assets/Slot001_GoldenPixiu/Scene/Slot001_BootstrapWeb.unity
+    guid: e9f8d7c6b5a49382716f5e4d3c2b1a10
   - enabled: 0
     path: Assets/Slot005_GemBonanza/Scene/Slot005_LoadingScene.unity
     guid: 0013182584d9b3b4286adbc8be0a21bb

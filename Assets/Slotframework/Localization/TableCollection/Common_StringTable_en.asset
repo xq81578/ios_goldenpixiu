@@ -36,12 +36,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1529315334361092
-    m_Localized: Click / tap to start at the current Bet.
+    m_Localized: Tap to start at the current Bet.
     m_Metadata:
       m_Items: []
   - m_Id: 1529315334361093
-    m_Localized: Click / tap the button or the game area during a spin stop to stop
-      the reels.
+    m_Localized: Tap the button or the game area during a spin to stop the reels.
     m_Metadata:
       m_Items: []
   - m_Id: 1529315334361094
@@ -49,8 +48,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1529315334361095
-    m_Localized: Click / tap to stop normal Spin or Auto Spin. The number on the
-      button indicates the remaining number of spins for Auto Spin.
+    m_Localized: Tap to stop normal Spin or Auto Spin. The number on the button
+      indicates the remaining number of spins for Auto Spin.
     m_Metadata:
       m_Items: []
   - m_Id: 1529315334361096
@@ -67,9 +66,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1529315334361099
-    m_Localized: "Click / tap to display the Bet Options.\nThe current bet level
-      is shown in the BET display. \nChange the bet by clicking on the arrows and
-      choosing the bet level of your choice."
+    m_Localized: "Tap to display the Bet Options.\nThe current bet level is shown
+      in the BET display. \nChange the bet by tapping the arrows and choosing the
+      bet level of your choice."
     m_Metadata:
       m_Items: []
   - m_Id: 1529315334361100
@@ -82,7 +81,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1529315334361102
-    m_Localized: Click / tap on the values to select number of Auto Spins.
+    m_Localized: Tap the values to select number of Auto Spins.
     m_Metadata:
       m_Items: []
   - m_Id: 1529315334361103
@@ -90,11 +89,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1529315334361104
-    m_Localized: Click / tap to show winning combinations and paytable.
+    m_Localized: Tap to show winning combinations and paytable.
     m_Metadata:
       m_Items: []
   - m_Id: 1529315334361105
-    m_Localized: Click / tap to show the game rules and button functions.
+    m_Localized: Tap to show the game rules and button functions.
     m_Metadata:
       m_Items: []
   - m_Id: 1529315334361106
@@ -102,7 +101,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1529315334361107
-    m_Localized: Click / tap to access additional settings.
+    m_Localized: Tap to access additional settings.
     m_Metadata:
       m_Items: []
   - m_Id: 1529315334361108
@@ -110,7 +109,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1529315334361109
-    m_Localized: Click / tap to back the lobby.
+    m_Localized: Tap to return to the lobby.
     m_Metadata:
       m_Items: []
   - m_Id: 1529315334361110
@@ -118,8 +117,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1529315334361111
-    m_Localized: Click / tap to enable or disable the Turbo Spin to reduce the duration
-      of reel spins in the main game.
+    m_Localized: Tap to enable or disable Turbo Spin to reduce the duration of reel
+      spins in the main game.
     m_Metadata:
       m_Items: []
   - m_Id: 1529315334361112
@@ -127,7 +126,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1529315334361113
-    m_Localized: Click / tap to turn sound ON or OFF.
+    m_Localized: Tap to turn sound ON or OFF.
     m_Metadata:
       m_Items: []
   - m_Id: 1529315334361114
@@ -135,8 +134,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1529315334361115
-    m_Localized: Click / tap to shows details of the previous games played. Scroll
-      down to the end to load more records.
+    m_Localized: Tap to show details of the previous games played. Scroll down to
+      the end to load more records.
     m_Metadata:
       m_Items: []
   - m_Id: 1529315334361116
@@ -144,7 +143,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1529315334361117
-    m_Localized: Click / tap to return to the game.
+    m_Localized: Tap to return to the game.
     m_Metadata:
       m_Items: []
   - m_Id: 1529315334361118
@@ -179,7 +178,9 @@ MonoBehaviour:
       representation of a physical device (a reel, a wheel of fortune or similar)
       does not represent a "real" physical device and the probabilities of it stopping
       on any particular position is determined by the game''s random number generator,
-      and not the number of positions on each device.'
+      and not the number of positions on each device.
+
+      This game is intended for players aged 18 or older. Please play responsibly.'
     m_Metadata:
       m_Items: []
   - m_Id: 69304683977576457

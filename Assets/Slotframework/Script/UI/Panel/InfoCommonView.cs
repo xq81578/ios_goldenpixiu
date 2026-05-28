@@ -34,6 +34,8 @@ namespace Slot.Common.UI
         private GameObject _homeLayoutGameObject;
         [SerializeField]
         private GameObject _historyLayoutGameObject;
+        [SerializeField]
+        private GameObject _spaceLayoutGameObject;
 
         [SerializeField]
         private VerticalLayoutGroup[] _verticalLayoutGroups;
@@ -117,6 +119,13 @@ namespace Slot.Common.UI
             _historyLayoutGameObject.SetActive(isActive);
         }
 
+        public void SetSpaceBarInfoActive(bool isActive)
+        {
+            if (_spaceLayoutGameObject == null)
+                return;
+            _spaceLayoutGameObject.SetActive(isActive);
+        }
+
         public void SetSpinSprite(Sprite spinSprite, Sprite stopSprite)
         {
             if (spinSprite != null)
@@ -128,14 +137,24 @@ namespace Slot.Common.UI
         
         public void LayoutEnable(bool enable)
         {
-            foreach (var vlg in _verticalLayoutGroups)
+            if (_verticalLayoutGroups != null)
             {
-                vlg.enabled = enable;
+                foreach (var vlg in _verticalLayoutGroups)
+                {
+                    if (vlg == null)
+                        continue;
+                    vlg.enabled = enable;
+                }
             }
 
-            foreach (var csf in _contentSizeFitters)
+            if (_contentSizeFitters != null)
             {
-                csf.enabled = enable;
+                foreach (var csf in _contentSizeFitters)
+                {
+                    if (csf == null)
+                        continue;
+                    csf.enabled = enable;
+                }
             }
         }
 

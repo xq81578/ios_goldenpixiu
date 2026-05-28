@@ -139,6 +139,7 @@ namespace Slot.Common.UI
         {
             _infoCommonView.SetAutoInfoActive(_gameInfoSO.ClientOptions.IsAutoActive);
             _infoCommonView.SetTurboInfoActive(_gameInfoSO.ClientOptions.IsTurboActive);
+            _infoCommonView.SetSpaceBarInfoActive(!Application.isMobilePlatform);
             bool showHomeInfo = !string.IsNullOrEmpty(_platformData.HomeUrl);
             _infoCommonView.SetHomeInfoActive(showHomeInfo);
             bool showHistoryInfo = !string.IsNullOrEmpty(_gameInfoSO.GetRecordUrlWithAccount(_platformData.Account));

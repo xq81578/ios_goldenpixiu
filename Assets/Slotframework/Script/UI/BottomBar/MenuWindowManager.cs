@@ -32,6 +32,12 @@ namespace Slot.Common.UI
         private Button _volumeButton;
         [SerializeField]
         private Button _logButton;
+        [SerializeField]
+        private GameObject _autoButton;
+
+        [Tooltip("仅显示音量按钮，隐藏首页/记录/自动旋转等菜单项。")]
+        [SerializeField]
+        private bool _onlyShowVolumeButton = true;
 
         [SerializeField]
         private Sprite _volumeOnSprite;
@@ -74,16 +80,44 @@ namespace Slot.Common.UI
             }
 
 #if ComboPlatform
-            _homeButton.gameObject.SetActive(true);
+            if (!_onlyShowVolumeButton)
+                _homeButton.gameObject.SetActive(true);
 #endif
 
             OnMenuClose();
 
+            if (_autoButton == null && _childObjectToggle != null)
+            {
+                var autoTransform = _childObjectToggle.transform.Find("BtnAuto");
+                if (autoTransform != null)
+                    _autoButton = autoTransform.gameObject;
+            }
+
             OnSetHomeUrlEvent(null);
             _recordUrl = _gameInfoSO.GetRecordUrlWithAccount(_platformData.Account);
             OnSetRecordUrlEvent(null);
+            ApplyMenuButtonVisibility();
         }
         #endregion
+
+        private void ApplyMenuButtonVisibility()
+        {
+            if (!_onlyShowVolumeButton)
+                return;
+
+            SetMenuButtonActive(_homeButton, false);
+            SetMenuButtonActive(_logButton, false);
+            SetMenuButtonActive(_volumeButton, true);
+
+            if (_autoButton != null)
+                _autoButton.SetActive(false);
+        }
+
+        private static void SetMenuButtonActive(Button button, bool active)
+        {
+            if (button != null)
+                button.gameObject.SetActive(active);
+        }
 
         private void OnMenuClick()
         {
@@ -244,6 +278,12 @@ namespace Slot.Common.UI
         [OnGameEvent(SubscriberPriority.High)]
         private void OnSetHomeUrlEvent(SetHomeUrlEvent e)
         {
+            if (_onlyShowVolumeButton)
+            {
+                ApplyMenuButtonVisibility();
+                return;
+            }
+
             if (_platformData == null)
                 return;
 #if UNITY_WEBGL
@@ -263,9 +303,12 @@ namespace Slot.Common.UI
                 _recordUrl = _gameInfoSO.RecordUrl;
             }
 
-            
-            
-            
+            if (_onlyShowVolumeButton)
+            {
+                ApplyMenuButtonVisibility();
+                return;
+            }
+
             bool logActive = !string.IsNullOrEmpty(_recordUrl);
             _logButton.gameObject.SetActive(logActive);
         }
