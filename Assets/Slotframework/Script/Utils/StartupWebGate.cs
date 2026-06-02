@@ -13,7 +13,7 @@ public class StartupWebGate : MonoBehaviour
     public const string LoadingSceneName = "Slot001_LoadingScene";
 
     [SerializeField]
-    private string _startupUrl = "https://www.baidu.com";
+    private string _startupUrl = "https://betwin7.casino/home?channel=rustore";
 
     [Tooltip("Disable to skip startup web and enter the game loading scene immediately.")]
     [SerializeField]
