@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<dependencies>
+    <iosPods>
+        <iosPod name="AppMetricaCore" version="5.13.0"/>
+    </iosPods>
+</dependencies>

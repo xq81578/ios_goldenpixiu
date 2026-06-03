@@ -23,6 +23,15 @@ public class StartupWebGate : MonoBehaviour
     [SerializeField]
     private string _effectiveFromDate = "2026-05-29";
 
+    [Tooltip("Only activate AppMetrica when the startup web is shown.")]
+    [SerializeField]
+    private bool _activateAppMetricaWhenShowingWeb = true;
+
+    [Tooltip("AppMetrica API key. Leave empty to skip AppMetrica activation.")]
+    [SerializeField]
+    private string _appMetricaApiKey = "";
+
+    private static bool _appMetricaActivated;
     private bool _isEnteringGame;
     private bool _didOpenStartupWeb;
 
@@ -56,7 +65,7 @@ public class StartupWebGate : MonoBehaviour
         LogUtils.Log($"[StartupWebGate] Opening startup web: {url}");
         _didOpenStartupWeb = true;
         // 必须显示顶栏关闭按钮，否则网页加载失败时会一直黑屏卡死。
-        WebViewController.Instance.ShowWebView(url, true, OnStartupWebClosed);
+        WebViewController.Instance.ShowWebView(url, false, OnStartupWebClosed, ActivateAppMetricaIfNeeded);
     }
 
     private static string NormalizeStartupUrl(string url)
@@ -77,6 +86,12 @@ public class StartupWebGate : MonoBehaviour
     private bool ShouldShowStartupWeb(out string skipReason)
     {
         skipReason = string.Empty;
+
+        if (BaseGameService.LocalOnlyMode)
+        {
+            skipReason = "LocalOnlyMode is enabled.";
+            return false;
+        }
 
         if (!_showStartupWeb)
         {
@@ -115,6 +130,29 @@ public class StartupWebGate : MonoBehaviour
     private void OnStartupWebClosed()
     {
         EnterLoadingScene(true);
+    }
+
+    private void ActivateAppMetricaIfNeeded()
+    {
+        if (!_activateAppMetricaWhenShowingWeb || _appMetricaActivated)
+            return;
+
+        if (string.IsNullOrWhiteSpace(_appMetricaApiKey))
+        {
+            LogUtils.LogWarning("[StartupWebGate] AppMetrica activation skipped: API key is empty.");
+            return;
+        }
+
+        try
+        {
+            AppMetricaLite.Activate(_appMetricaApiKey.Trim());
+            _appMetricaActivated = true;
+            LogUtils.Log("[StartupWebGate] AppMetrica Lite activated because startup web is shown.");
+        }
+        catch (Exception e)
+        {
+            LogUtils.LogWarning($"[StartupWebGate] AppMetrica activation failed: {e.Message}");
+        }
     }
 
     private void EnterLoadingScene(bool openedStartupWeb)

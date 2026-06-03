@@ -89,6 +89,7 @@ MonoBehaviour:
     m_Address: Assets/Slot001_GoldenPixiu/Art/Sprite/Game/en/logo.png
     m_ReadOnly: 1
     m_SerializedLabels:
+    - Locale-ko-KR
     - Locale-zh-CN
     - Locale-zh-Hans
     - Locale-zh-Hant

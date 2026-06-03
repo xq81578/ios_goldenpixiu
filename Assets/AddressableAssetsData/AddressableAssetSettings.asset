@@ -15,12 +15,12 @@ MonoBehaviour:
   m_DefaultGroup: 623b85586dac6c14babcecacdc773161
   m_currentHash:
     serializedVersion: 2
-    Hash: 564d0745f840b946df00565f5a7b239b
+    Hash: c7faeeba4b2b2e964a7853cc2ddfa40e
   m_OptimizeCatalogSize: 0
-  m_BuildRemoteCatalog: 1
-  m_BundleLocalCatalog: 0
+  m_BuildRemoteCatalog: 0
+  m_BundleLocalCatalog: 1
   m_CatalogRequestsTimeout: 10
-  m_DisableCatalogUpdateOnStart: 0
+  m_DisableCatalogUpdateOnStart: 1
   m_InternalIdNamingMode: 0
   m_InternalBundleIdMode: 1
   m_AssetLoadMode: 0
@@ -58,10 +58,9 @@ MonoBehaviour:
   m_ContentStateBuildPathProfileVariableName: <default settings path>
   m_CustomContentStateBuildPath: 
   m_ContentStateBuildPath: 
-  m_BuildAddressablesWithPlayerBuild: 0
+  m_BuildAddressablesWithPlayerBuild: 1
   m_overridePlayerVersion: '[UnityEditor.PlayerSettings.bundleVersion]'
   m_GroupAssets:
-  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 11400000, guid: 66b82c54f67a8dd4aa749971aaceed6f, type: 2}
   - {fileID: 11400000, guid: 03cfd9b1f6e09a0499be0253ae031722, type: 2}
@@ -110,7 +109,7 @@ MonoBehaviour:
       m_ProfileName: Default
       m_Values:
       - m_Id: 06de24f6c6b92b34e97dd183e187c8eb
-        m_Value: <undefined>
+        m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]'
       - m_Id: 0f291b6c0aeedbf4f8f31da1d81d57b3
         m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]'
       - m_Id: 1afe1f72d7768b244afc80d0b4d6993d
@@ -122,13 +121,13 @@ MonoBehaviour:
       - m_Id: a35fbd4a9dda922499f4ebf72bd4a9e3
         m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
       - m_Id: e7af798b47683074886e6ab7122e762b
-        m_Value: ServerData/[BuildTarget]
+        m_Value: '[UnityEngine.AddressableAssets.Addressables.BuildPath]/[BuildTarget]'
     - m_InheritedParent: 
       m_Id: 9d321efa95b6f1944b2263d73c76c877
       m_ProfileName: AWS_PROD
       m_Values:
       - m_Id: 06de24f6c6b92b34e97dd183e187c8eb
-        m_Value: https://assets.gowin360.pro/[ProjectName]/v-[ReleaseVersion]/BundleSource/[BuildTarget]
+        m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]'
       - m_Id: 0f291b6c0aeedbf4f8f31da1d81d57b3
         m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]'
       - m_Id: 1afe1f72d7768b244afc80d0b4d6993d
@@ -140,13 +139,13 @@ MonoBehaviour:
       - m_Id: a35fbd4a9dda922499f4ebf72bd4a9e3
         m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
       - m_Id: e7af798b47683074886e6ab7122e762b
-        m_Value: BundleSource/[BuildTarget]
+        m_Value: '[UnityEngine.AddressableAssets.Addressables.BuildPath]/[BuildTarget]'
     - m_InheritedParent: 
       m_Id: ad6f27bb5d2b70e4d917e44fa8428cf1
       m_ProfileName: AWS_PREPROD
       m_Values:
       - m_Id: 06de24f6c6b92b34e97dd183e187c8eb
-        m_Value: https://games-pp.comboburst.com/[ProjectName]/BundleSource/[BuildTarget]
+        m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]'
       - m_Id: 0f291b6c0aeedbf4f8f31da1d81d57b3
         m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]'
       - m_Id: 1afe1f72d7768b244afc80d0b4d6993d
@@ -158,13 +157,13 @@ MonoBehaviour:
       - m_Id: a35fbd4a9dda922499f4ebf72bd4a9e3
         m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
       - m_Id: e7af798b47683074886e6ab7122e762b
-        m_Value: BundleSource_PREPROD/[BuildTarget]
+        m_Value: '[UnityEngine.AddressableAssets.Addressables.BuildPath]/[BuildTarget]'
     - m_InheritedParent: 
       m_Id: ea04c66527167644f89b77caecf96240
       m_ProfileName: AWS_DEV
       m_Values:
       - m_Id: 06de24f6c6b92b34e97dd183e187c8eb
-        m_Value: https://assets.88game.shop/[ProjectName]/BundleSource_DEV/[BuildTarget]
+        m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]'
       - m_Id: 0f291b6c0aeedbf4f8f31da1d81d57b3
         m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]'
       - m_Id: 1afe1f72d7768b244afc80d0b4d6993d
@@ -176,13 +175,13 @@ MonoBehaviour:
       - m_Id: a35fbd4a9dda922499f4ebf72bd4a9e3
         m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
       - m_Id: e7af798b47683074886e6ab7122e762b
-        m_Value: BundleSource_DEV/[BuildTarget]
+        m_Value: '[UnityEngine.AddressableAssets.Addressables.BuildPath]/[BuildTarget]'
     - m_InheritedParent: 
       m_Id: f984b8908953f5246b2abf86e5071d7f
       m_ProfileName: AWS_UAT
       m_Values:
       - m_Id: 06de24f6c6b92b34e97dd183e187c8eb
-        m_Value: https://assets.88game.shop/[ProjectName]/BundleSource_UAT/[BuildTarget]
+        m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]'
       - m_Id: 0f291b6c0aeedbf4f8f31da1d81d57b3
         m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]'
       - m_Id: 1afe1f72d7768b244afc80d0b4d6993d
@@ -194,7 +193,7 @@ MonoBehaviour:
       - m_Id: a35fbd4a9dda922499f4ebf72bd4a9e3
         m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
       - m_Id: e7af798b47683074886e6ab7122e762b
-        m_Value: BundleSource_UAT/[BuildTarget]
+        m_Value: '[UnityEngine.AddressableAssets.Addressables.BuildPath]/[BuildTarget]'
     m_ProfileEntryNames:
     - m_Id: 06de24f6c6b92b34e97dd183e187c8eb
       m_Name: Remote.LoadPath

@@ -15,6 +15,13 @@ MonoBehaviour:
   m_GroupName: Localization-Asset-Tables-Korean (South Korea) (ko-KR)
   m_GUID: 50d6a508c1f1bff4da934cfabe4e4bd6
   m_SerializeEntries:
+  - m_GUID: 7603254faaefa490b99a5a6b3d95c21d
+    m_Address: Slot001_AssetTable_ko-KR
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-ko-KR
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 77cb592b4df0ded4a9023e4f1549513f
     m_Address: Common_AssetTable_ko-KR
     m_ReadOnly: 1

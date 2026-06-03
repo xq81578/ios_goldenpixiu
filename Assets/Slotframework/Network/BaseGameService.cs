@@ -16,6 +16,9 @@ using VContainer;
 
 public class BaseGameService : MonoBehaviour
 {
+    public const bool LocalOnlyMode = false;
+    private const ulong LocalOnlyBalance = 1000000000;
+
     private enum RuntimeServerMode
     {
         Dev,
@@ -185,6 +188,13 @@ public class BaseGameService : MonoBehaviour
     [OnGameEvent(SubscriberPriority.High)]
     protected virtual void OnGameServiceInit(GameServiceInitEvent e)
     {
+        if (LocalOnlyMode)
+        {
+            LogUtils.Log("[BaseGameService] LocalOnlyMode enabled, skip websocket init.");
+            InitializeLocalOnly();
+            return;
+        }
+
         GetInfo().Forget();
         WaitServiceReady().Forget();
     }
@@ -291,6 +301,13 @@ public class BaseGameService : MonoBehaviour
     public void SendGetBalanceRequest(Action<ulong> callback = null, ECurrency currency = ECurrency.PHP)
     {
         _isGetBalance = false;
+        if (LocalOnlyMode)
+        {
+            _OnGetBalanceCallback = callback == null ? SetBalance : callback;
+            _OnGetBalanceCallback?.Invoke(LocalOnlyBalance);
+            return;
+        }
+
         // GetBalanceCmd cmdData = new() { Currency = currency.ToString() };
         GameServerHandler.Instance.Send(GET_BALANCE_CMD, new JObject());
 
@@ -327,6 +344,13 @@ public class BaseGameService : MonoBehaviour
         double newBalance = _playerBetData.Balance - totalBet;
         _playerBetData.Balance = newBalance < 0 ? 0 : newBalance;
         new GameChangeBalanceEvent().Publish(this);
+
+        if (LocalOnlyMode)
+        {
+            LogUtils.LogWarning("[BaseGameService] LocalOnlyMode: spin request skipped.");
+            callback?.Invoke(null);
+            return;
+        }
 
         bool isAuto = _gameStateData.IsAuto;
         string autoSpinId = isAuto ? _lastAutoSpinId : "Null";
@@ -408,6 +432,12 @@ public class BaseGameService : MonoBehaviour
 
     public async UniTaskVoid GetInfo()
     {
+        if (LocalOnlyMode)
+        {
+            InitializeLocalOnly();
+            return;
+        }
+
         var gameToken = URLParameter.GetURLParameter("t");
         var lang = URLParameter.GetURLParameter("lang") ?? URLParameter.GetURLParameter("l") ?? "en";
         if (string.IsNullOrEmpty(gameToken))
@@ -432,10 +462,36 @@ public class BaseGameService : MonoBehaviour
         new GameChangeBalanceEvent().Publish(this);
     }
 
+    private void InitializeLocalOnly()
+    {
+        _isLogin = true;
+        _isInitialize = true;
+        _isGetInfo = false;
+        _isGetBalance = false;
+
+        Initialize();
+        _gameInfoSO.SetGameInfo(_gameInfoData);
+        _recordUrl = GetDevFallbackRecordUrl();
+        SetRecordUrl();
+        _platformData.SetHomeUrl(GetDevFallbackHomeUrl());
+        new SetHomeUrlEvent().Publish(this);
+        SetGameInfo();
+        SetBalance(LocalOnlyBalance);
+        Initialization();
+    }
+
     private void SetGameInfo()
     {
         _isGetInfo = true;
-        GetSystemUrl();
+        if (LocalOnlyMode)
+        {
+            ApplyDevFallbackSystemUrls();
+        }
+        else
+        {
+            GetSystemUrl();
+        }
+
         SetBetData();
     }
 

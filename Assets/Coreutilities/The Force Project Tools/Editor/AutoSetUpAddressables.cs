@@ -30,14 +30,14 @@ public class AutoSetUpAddressables : EditorWindow
     private static Dictionary<string, ProfileInfo> _profileSettings = new Dictionary<string, ProfileInfo>()
     {
         { "AWS_DEV"
-            , new ProfileInfo { RemoteBuildPath = "BundleSource_DEV/[BuildTarget]"
-            , RemoteLoadPath = "https://assets.88game.shop/[ProjectName]/BundleSource_DEV/[BuildTarget]" } },
+            , new ProfileInfo { RemoteBuildPath = "[UnityEngine.AddressableAssets.Addressables.BuildPath]/[BuildTarget]"
+            , RemoteLoadPath = "{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]" } },
         { "AWS_UAT"
-            , new ProfileInfo { RemoteBuildPath = "BundleSource_UAT/[BuildTarget]"
-            , RemoteLoadPath = "https://assets.88game.shop/[ProjectName]/BundleSource_UAT/[BuildTarget]" } },
+            , new ProfileInfo { RemoteBuildPath = "[UnityEngine.AddressableAssets.Addressables.BuildPath]/[BuildTarget]"
+            , RemoteLoadPath = "{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]" } },
         { "AWS_PROD"
-            , new ProfileInfo { RemoteBuildPath = "BundleSource/[BuildTarget]"
-            , RemoteLoadPath = "https://assets.gowin360.pro/[ProjectName]/v-[ReleaseVersion]/BundleSource/[BuildTarget]" } }
+            , new ProfileInfo { RemoteBuildPath = "[UnityEngine.AddressableAssets.Addressables.BuildPath]/[BuildTarget]"
+            , RemoteLoadPath = "{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]" } }
     };
 
 

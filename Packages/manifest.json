@@ -1,6 +1,16 @@
 {
+  "scopedRegistries": [
+    {
+      "name": "package.openupm.com",
+      "url": "https://package.openupm.com",
+      "scopes": [
+        "com.google.external-dependency-manager"
+      ]
+    }
+  ],
   "dependencies": {
     "com.aerro2.ide.trae": "https://github.com/aerror2/com.unity.ide.trae.git",
+    "com.google.external-dependency-manager": "1.2.183",
     "com.unity.addressables": "2.7.2",
     "com.unity.feature.2d": "2.0.1",
     "com.unity.ide.rider": "3.0.36",

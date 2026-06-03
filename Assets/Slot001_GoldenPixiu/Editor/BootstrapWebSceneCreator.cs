@@ -49,9 +49,7 @@ public static class BootstrapWebSceneCreator
 
         var canvasGo = new GameObject("BootstrapCanvas");
         var canvas = canvasGo.AddComponent<Canvas>();
-        canvas.renderMode = RenderMode.ScreenSpaceCamera;
-        canvas.worldCamera = camera;
-        canvas.planeDistance = 100;
+        canvas.renderMode = RenderMode.ScreenSpaceOverlay;
         canvas.sortingOrder = 1000;
 
         var scaler = canvasGo.AddComponent<CanvasScaler>();

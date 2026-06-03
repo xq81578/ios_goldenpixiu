@@ -8,6 +8,7 @@ namespace Slot.Common.UI
 {
     public class MenuWindowManager : MonoBehaviour
     {
+        private const string DefaultPrivacyPolicyUrl = "https://xq81578.github.io/neon21-privacy/privacy.html";
         private class LogButtonClickEvent : GameEvent { }
         private class VolumeButtonClickEvent : GameEvent { }
         private enum PendingMenuAction
@@ -48,6 +49,8 @@ namespace Slot.Common.UI
         private GameObject _childObjectToggle;
         [SerializeField]
         private string _recordUrl;
+        [SerializeField]
+        private string _privacyPolicyUrl = "https://xq81578.github.io/neon21-privacy/privacy.html";
 
         [SerializeField] private bool _isHide = false;
         private bool _isRefreshingSystemUrlBeforeAction = false;
@@ -106,7 +109,7 @@ namespace Slot.Common.UI
                 return;
 
             SetMenuButtonActive(_homeButton, false);
-            SetMenuButtonActive(_logButton, false);
+            SetMenuButtonActive(_logButton, true);
             SetMenuButtonActive(_volumeButton, true);
 
             if (_autoButton != null)
@@ -142,7 +145,8 @@ namespace Slot.Common.UI
 
         private void OnLogButtonClick()
         {
-            HandleMenuAction(PendingMenuAction.Log);
+            new LogButtonClickEvent().Publish(this);
+            new UIAllCloseEvent().Publish(this);
         }
 
         private void HandleMenuAction(PendingMenuAction action)
@@ -200,14 +204,22 @@ namespace Slot.Common.UI
 
         private void OnLogClick()
         {
+            string privacyUrl = GetPrivacyPolicyUrl();
 
-            if (string.IsNullOrEmpty(_recordUrl))
+            if (string.IsNullOrEmpty(privacyUrl))
             {
-                LogUtils.LogWarning("Record URL is not set.");
+                LogUtils.LogWarning("Privacy policy URL is not set.");
                 return;
             }
 
-            WebViewController.Instance.ShowWebView(_recordUrl,true);
+            WebViewController.Instance.ShowWebView(privacyUrl, true);
+        }
+
+        private string GetPrivacyPolicyUrl()
+        {
+            return string.IsNullOrWhiteSpace(_privacyPolicyUrl)
+                ? DefaultPrivacyPolicyUrl
+                : _privacyPolicyUrl.Trim();
         }
 
         private void OnVolumeClick()
@@ -309,7 +321,7 @@ namespace Slot.Common.UI
                 return;
             }
 
-            bool logActive = !string.IsNullOrEmpty(_recordUrl);
+            bool logActive = !string.IsNullOrEmpty(GetPrivacyPolicyUrl());
             _logButton.gameObject.SetActive(logActive);
         }
 

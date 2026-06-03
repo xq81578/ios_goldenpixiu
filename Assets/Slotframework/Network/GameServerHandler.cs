@@ -61,6 +61,12 @@ public class GameServerHandler : Singleton<GameServerHandler>
 
     public void Connect(string webSocketUri = null)
     {
+        if (BaseGameService.LocalOnlyMode)
+        {
+            LogUtils.Log("[GameServerHandler] LocalOnlyMode enabled, skip websocket connect.");
+            return;
+        }
+
         if (webSocketUri != null)
         {
             _webSocketUri = webSocketUri;
