@@ -31,8 +31,10 @@ public class WebViewController : Singleton<WebViewController>
 
     [SerializeField]
     private bool _showLoadingProgress = true;
+
     [SerializeField]
     private float _reloadAfterFocusDelaySeconds = 1.2f;
+
     [SerializeField]
     private float _reloadAfterFocusFallbackDelaySeconds = 3.5f;
     [SerializeField]
@@ -54,8 +56,6 @@ public class WebViewController : Singleton<WebViewController>
     private bool _lastLoadFailed;
     private bool _reloadAfterFocusScheduled;
     private GameObject _loadingOverlay;
-    private Image _loadingProgressFill;
-    private float _displayedLoadProgress;
     private float _currentHeaderReservedHeight;
     private bool _headerCloseAreaConfigured;
     private Button _headerCloseAreaButton;
@@ -300,7 +300,7 @@ public class WebViewController : Singleton<WebViewController>
         _currentUrl = url;
         _currentLoadAttempt = 0;
         _mask.SetActive(true);
-        ShowLoadingOverlay(0.04f);
+        ShowLoadingOverlay();
         _canvasWebView.gameObject.SetActive(true);
         await _canvasWebView.WaitUntilInitialized();
 
@@ -444,8 +444,7 @@ public class WebViewController : Singleton<WebViewController>
         LogUtils.Log($"[WebViewController] Loading web url: {_currentUrl}, attempt={_currentLoadAttempt + 1}");
         _isLoadingWebPage = true;
         _lastLoadFailed = false;
-        _displayedLoadProgress = 0f;
-        ShowLoadingOverlay(0.08f);
+        ShowLoadingOverlay();
         _canvasWebView.WebView.LoadUrl(_currentUrl);
     }
 
@@ -459,11 +458,9 @@ public class WebViewController : Singleton<WebViewController>
             case ProgressChangeType.Started:
                 _isLoadingWebPage = true;
                 _lastLoadFailed = false;
-                _displayedLoadProgress = 0f;
-                ShowLoadingOverlay(0.08f);
+                ShowLoadingOverlay();
                 break;
             case ProgressChangeType.Updated:
-                UpdateLoadingProgress(Mathf.Clamp(eventArgs.Progress, 0.08f, 0.92f));
                 break;
             case ProgressChangeType.Finished:
                 _isLoadingWebPage = false;
@@ -474,7 +471,6 @@ public class WebViewController : Singleton<WebViewController>
             case ProgressChangeType.Failed:
                 _isLoadingWebPage = false;
                 _lastLoadFailed = true;
-                UpdateLoadingProgress(0.12f);
                 break;
         }
     }
@@ -560,19 +556,17 @@ public class WebViewController : Singleton<WebViewController>
         pageLoadedCallback?.Invoke();
     }
 
-    private void ShowLoadingOverlay(float progress)
+    private void ShowLoadingOverlay()
     {
         if (!_showLoadingProgress)
             return;
 
         EnsureLoadingOverlay();
         SetLoadingOverlayVisible(true);
-        UpdateLoadingProgress(progress);
     }
 
     private void CompleteLoadingOverlay()
     {
-        UpdateLoadingProgress(1f);
         HideLoadingOverlaySoon().Forget();
     }
 
@@ -583,21 +577,10 @@ public class WebViewController : Singleton<WebViewController>
             SetLoadingOverlayVisible(false);
     }
 
-    private void UpdateLoadingProgress(float progress)
-    {
-        _displayedLoadProgress = Mathf.Clamp01(Mathf.Max(_displayedLoadProgress, progress));
-
-        if (_loadingProgressFill != null)
-            _loadingProgressFill.fillAmount = _displayedLoadProgress;
-    }
-
     private void SetLoadingOverlayVisible(bool visible)
     {
         if (_loadingOverlay != null)
             _loadingOverlay.SetActive(visible);
-
-        if (!visible)
-            _displayedLoadProgress = 0f;
     }
 
     private void EnsureLoadingOverlay()
@@ -622,37 +605,9 @@ public class WebViewController : Singleton<WebViewController>
         background.color = Color.white;
         background.raycastTarget = true;
 
-        GameObject trackObject = new GameObject("ProgressTrack", typeof(RectTransform), typeof(CanvasRenderer), typeof(Image));
-        trackObject.layer = _loadingOverlay.layer;
-        trackObject.transform.SetParent(_loadingOverlay.transform, false);
-
-        RectTransform trackRect = trackObject.GetComponent<RectTransform>();
-        trackRect.anchorMin = new Vector2(0.16f, 0.5f);
-        trackRect.anchorMax = new Vector2(0.84f, 0.5f);
-        trackRect.sizeDelta = new Vector2(0f, 6f);
-        trackRect.anchoredPosition = Vector2.zero;
-
-        Image trackImage = trackObject.GetComponent<Image>();
-        trackImage.color = new Color(0.86f, 0.88f, 0.9f, 1f);
-        trackImage.raycastTarget = false;
-
-        GameObject fillObject = new GameObject("ProgressFill", typeof(RectTransform), typeof(CanvasRenderer), typeof(Image));
-        fillObject.layer = _loadingOverlay.layer;
-        fillObject.transform.SetParent(trackObject.transform, false);
-
-        RectTransform fillRect = fillObject.GetComponent<RectTransform>();
-        fillRect.anchorMin = Vector2.zero;
-        fillRect.anchorMax = Vector2.one;
-        fillRect.offsetMin = Vector2.zero;
-        fillRect.offsetMax = Vector2.zero;
-
-        _loadingProgressFill = fillObject.GetComponent<Image>();
-        _loadingProgressFill.color = new Color(0.12f, 0.46f, 0.95f, 1f);
-        _loadingProgressFill.raycastTarget = false;
-        _loadingProgressFill.type = Image.Type.Filled;
-        _loadingProgressFill.fillMethod = Image.FillMethod.Horizontal;
-        _loadingProgressFill.fillOrigin = (int)Image.OriginHorizontal.Left;
-        _loadingProgressFill.fillAmount = 0f;
+        var dotsContainer = new GameObject("LoadingDots", typeof(RectTransform), typeof(WebViewLoadingDots));
+        dotsContainer.layer = _loadingOverlay.layer;
+        dotsContainer.transform.SetParent(_loadingOverlay.transform, false);
     }
 
     private const string DisableOverscrollScript = @"

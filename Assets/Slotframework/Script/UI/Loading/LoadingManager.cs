@@ -106,13 +106,16 @@ namespace Slot.Common
 
         private void Update()
         {
-            _tempTime += Time.deltaTime;
-            //每 5 秒換下一張圖
-            if (_tempTime > _changeDuration)
-            {
-                _tempTime = 0;
-                _nextButton.onClick.Invoke();
-            }
+            if (StartupWebGate.IsStartupWebVisible)
+                return;
+
+            // _tempTime += Time.deltaTime;
+            // //每 5 秒換下一張圖
+            // if (_tempTime > _changeDuration)
+            // {
+            //     _tempTime = 0;
+            //     _nextButton.onClick.Invoke();
+            // }
         }
 
         private void InitializeCarouselPositions()

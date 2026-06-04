@@ -44,6 +44,8 @@ public class AudioManager : Singleton<AudioManager>
     private static List<SfxPlayData> sfxPlayDatas = new List<SfxPlayData>();
     private static bool _isAudioManagerInit = false;
     private static Tween _bgmFadeTween;
+    private static bool _suppressBgmForStartupWeb;
+    private static string _deferredBgmName;
 
     public static float MusicVolume
     {
@@ -320,12 +322,56 @@ public class AudioManager : Singleton<AudioManager>
         return false;
     }
 
+    public static void SetStartupWebBgmSuppressed(bool suppressed)
+    {
+        if (_suppressBgmForStartupWeb == suppressed)
+            return;
+
+        _suppressBgmForStartupWeb = suppressed;
+
+        if (suppressed)
+        {
+            StopBgmForStartupWeb();
+            return;
+        }
+
+        if (string.IsNullOrEmpty(_deferredBgmName))
+            return;
+
+        var deferredName = _deferredBgmName;
+        _deferredBgmName = null;
+        PlayOneTrackByName(deferredName);
+    }
+
+    public static void StopBgmForStartupWeb()
+    {
+        if (_bgmFadeTween != null)
+            _bgmFadeTween.Kill();
+
+        if (MasterAudio.SafeInstance != null)
+            MasterAudio.StopAllPlaylists();
+
+        if (string.IsNullOrEmpty(currentMusicName))
+            return;
+
+        MasterAudio.StopPlaylist();
+        ClearMusicData();
+        MusicVolume = 1;
+    }
+
     // 播放指定名稱音樂
     public static void PlayOneTrackByName(string name, bool loop = true, float volume = 1f, float crossfade = 1.0f)
     {
         if (!_isAudioManagerInit)
         {
             Initialized();
+        }
+
+        if (_suppressBgmForStartupWeb)
+        {
+            _deferredBgmName = name;
+            LogUtils.Log($"[AudioManager] BGM deferred while startup WebView is visible: {name}");
+            return;
         }
 
         if (!string.IsNullOrEmpty(currentMusicName) && !currentMusicName.Equals(name))

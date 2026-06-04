@@ -49,6 +49,9 @@ namespace Slot.Common.UI.Mediator
 
         private void Update()
         {
+            if (StartupWebGate.IsStartupWebVisible)
+                return;
+
 #if !RELEASE_BUILD
             if (!_autoChangeContent) return;
 #endif

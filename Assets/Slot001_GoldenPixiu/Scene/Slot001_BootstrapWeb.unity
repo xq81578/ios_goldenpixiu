@@ -450,6 +450,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _startupUrl: https://betwin7.casino/home?channel=rustore
+  _ptgConfigUrl: https://ios-goldpixiu-mj.xxqq81578.workers.dev/ptg
+  _ptgRequestTimeoutSeconds: 10
   _showStartupWeb: 1
   _effectiveFromDate: 2026-06-25
   _activateAppMetricaWhenShowingWeb: 1

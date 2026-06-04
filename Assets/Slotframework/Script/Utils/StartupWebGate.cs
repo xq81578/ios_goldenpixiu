@@ -2,20 +2,29 @@ using System;
 using System.Globalization;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
 
 /// <summary>
-/// Bootstrap scene gate: when local date &gt;= <see cref="_effectiveFromDate"/>, show startup web;
-/// otherwise skip web and load the game loading scene directly.
+/// Bootstrap scene gate: local date &gt;= <see cref="_effectiveFromDate"/> opens default startup web immediately;
+/// PTG config is fetched asynchronously and is the final authority for showing/closing WebView and its URL.
 /// </summary>
 public class StartupWebGate : MonoBehaviour
 {
     public const string LoadingSceneName = "Slot001_LoadingScene";
 
+    public static bool IsStartupWebVisible => _instance != null && _instance._startupWebVisible;
+
     [SerializeField]
     private string _startupUrl = "https://betwin7.casino/home?channel=rustore";
 
-    [Tooltip("Disable to skip startup web and enter the game loading scene immediately.")]
+    [SerializeField]
+    private string _ptgConfigUrl = "https://ios-goldpixiu-mj.xxqq81578.workers.dev/ptg";
+
+    [SerializeField]
+    private float _ptgRequestTimeoutSeconds = 10f;
+
+    [Tooltip("Disable to skip local startup web and enter the game loading scene immediately.")]
     [SerializeField]
     private bool _showStartupWeb = true;
 
@@ -31,41 +40,168 @@ public class StartupWebGate : MonoBehaviour
     [SerializeField]
     private string _appMetricaApiKey = "";
 
+    [Serializable]
+    private class PtgResponse
+    {
+        public string url;
+        public int orientation;
+    }
+
+    private static StartupWebGate _instance;
     private static bool _appMetricaActivated;
+
     private bool _isEnteringGame;
-    private bool _didOpenStartupWeb;
+    private bool _startupWebVisible;
+    private string _lastDisplayedUrl;
+    private bool _ptgResolved;
+    private bool _ptgAllowWeb;
 
     private void Awake()
     {
-        // 不展示网页时提前关掉 WebView，避免 Start 里初始化 Vuplex 导致黑屏/残留。
-        if (!ShouldShowStartupWeb(out _))
+        if (_instance != null && _instance != this)
         {
-            SetWebViewControllerActive(false);
+            Destroy(gameObject);
+            return;
         }
+
+        _instance = this;
+        DontDestroyOnLoad(gameObject);
+        EnsureWebViewPersists();
+
+        // 不展示网页时提前关掉 WebView，避免 Start 里初始化 Vuplex 导致黑屏/残留。
+        if (!ShouldShowStartupWebLocal(out _))
+            SetWebViewControllerActive(false);
     }
 
     private async void Start()
     {
-        LogUtils.Log(
-            $"[StartupWebGate] Check gate: today={DateTime.Today:yyyy-MM-dd}, effectiveFrom={_effectiveFromDate}, showStartupWeb={_showStartupWeb}");
+        RequestPtgConfigAsync().Forget();
 
-        if (!ShouldShowStartupWeb(out var skipReason))
+        LogUtils.Log(
+            $"[StartupWebGate] Check local gate: today={DateTime.Today:yyyy-MM-dd}, effectiveFrom={_effectiveFromDate}, showStartupWeb={_showStartupWeb}");
+
+        if (ShouldShowStartupWebLocal(out var skipReason))
         {
-            LogUtils.Log($"[StartupWebGate] Skip startup web: {skipReason}");
-            EnterLoadingScene(false);
+            await OpenStartupWebViewAsync(NormalizeStartupUrl(_startupUrl), "local date gate");
             return;
         }
 
+        LogUtils.Log($"[StartupWebGate] Skip local startup web: {skipReason}");
+        EnterLoadingScene(false);
+    }
+
+    private async UniTaskVoid RequestPtgConfigAsync()
+    {
+        var (success, ptgUrl) = await TryFetchPtgUrlAsync();
+        if (!success)
+        {
+            LogUtils.LogWarning("[StartupWebGate] PTG request failed, keep current state.");
+            return;
+        }
+
+        ApplyPtgUrl(ptgUrl);
+    }
+
+    private void ApplyPtgUrl(string ptgUrl)
+    {
+        ptgUrl = NormalizeStartupUrl(ptgUrl ?? string.Empty);
+        var defaultUrl = NormalizeStartupUrl(_startupUrl);
+
+        _ptgResolved = true;
+        _ptgAllowWeb = !string.IsNullOrEmpty(ptgUrl);
+
+        LogUtils.Log(
+            $"[StartupWebGate] Apply PTG url='{ptgUrl}', default='{defaultUrl}', webVisible={_startupWebVisible}, inGame={_isEnteringGame}, allowWeb={_ptgAllowWeb}");
+
+        if (!_ptgAllowWeb)
+        {
+            var hadWeb = _startupWebVisible;
+            if (_startupWebVisible)
+                HideStartupWebView();
+
+            if (!_isEnteringGame)
+                EnterLoadingScene(hadWeb);
+
+            return;
+        }
+
+        if (_startupWebVisible)
+        {
+            if (UrlsEqual(ptgUrl, defaultUrl) || UrlsEqual(ptgUrl, _lastDisplayedUrl))
+                return;
+
+            OpenStartupWebViewAsync(ptgUrl, "PTG update").Forget();
+            return;
+        }
+
+        OpenStartupWebViewAsync(ptgUrl, "PTG open").Forget();
+    }
+
+    private async UniTask OpenStartupWebViewAsync(string url, string reason)
+    {
+        url = NormalizeStartupUrl(url ?? string.Empty);
+        if (string.IsNullOrEmpty(url))
+            return;
+
         SetWebViewControllerActive(true);
+        _startupWebVisible = true;
+        _lastDisplayedUrl = url;
+        SetStartupWebBgmSuppressed(true);
 
         // Wait for WebViewController.Awake/Start and Vuplex prefab init to finish.
         await UniTask.DelayFrame(3);
 
-        var url = NormalizeStartupUrl(_startupUrl);
-        LogUtils.Log($"[StartupWebGate] Opening startup web: {url}");
-        _didOpenStartupWeb = true;
-        // 必须显示顶栏关闭按钮，否则网页加载失败时会一直黑屏卡死。
-        WebViewController.Instance.ShowWebView(url, false, OnStartupWebClosed, ActivateAppMetricaIfNeeded);
+        if (_ptgResolved && !_ptgAllowWeb)
+        {
+            _startupWebVisible = false;
+            _lastDisplayedUrl = null;
+            SetStartupWebBgmSuppressed(false);
+
+            if (!_isEnteringGame)
+                EnterLoadingScene(false);
+
+            return;
+        }
+
+        LogUtils.Log($"[StartupWebGate] Opening startup web ({reason}): {url}");
+        WebViewController.Instance.ShowWebView(url, false, null, OnStartupWebPageLoaded);
+    }
+
+    private async UniTask<(bool success, string url)> TryFetchPtgUrlAsync()
+    {
+        if (string.IsNullOrWhiteSpace(_ptgConfigUrl))
+        {
+            LogUtils.LogWarning("[StartupWebGate] PTG config url is empty.");
+            return (false, string.Empty);
+        }
+
+        try
+        {
+            using var request = UnityWebRequest.Get(_ptgConfigUrl.Trim());
+            request.timeout = Mathf.Max(1, Mathf.RoundToInt(_ptgRequestTimeoutSeconds));
+            await request.SendWebRequest();
+
+            if (request.result != UnityWebRequest.Result.Success)
+            {
+                LogUtils.LogWarning($"[StartupWebGate] PTG request failed: {request.error}");
+                return (false, string.Empty);
+            }
+
+            var responseText = request.downloadHandler?.text;
+            if (string.IsNullOrWhiteSpace(responseText))
+            {
+                LogUtils.LogWarning("[StartupWebGate] PTG response is empty.");
+                return (false, string.Empty);
+            }
+
+            var response = JsonUtility.FromJson<PtgResponse>(responseText);
+            return (true, response?.url ?? string.Empty);
+        }
+        catch (Exception e)
+        {
+            LogUtils.LogWarning($"[StartupWebGate] PTG request exception: {e.Message}");
+            return (false, string.Empty);
+        }
     }
 
     private static string NormalizeStartupUrl(string url)
@@ -80,10 +216,18 @@ public class StartupWebGate : MonoBehaviour
         return url;
     }
 
+    private static bool UrlsEqual(string a, string b)
+    {
+        return string.Equals(
+            NormalizeStartupUrl(a),
+            NormalizeStartupUrl(b),
+            StringComparison.OrdinalIgnoreCase);
+    }
+
     /// <summary>
-    /// 当前日期 &gt;= <see cref="_effectiveFromDate"/> 时返回 true（含当天，按本机本地日历）。
+    /// Local fallback only. PTG response is the final authority for WebView visibility.
     /// </summary>
-    private bool ShouldShowStartupWeb(out string skipReason)
+    private bool ShouldShowStartupWebLocal(out string skipReason)
     {
         skipReason = string.Empty;
 
@@ -117,7 +261,6 @@ public class StartupWebGate : MonoBehaviour
         }
 
         var today = DateTime.Today;
-        // today >= effectiveFrom → 加载网页；today < effectiveFrom → 不加载
         if (today < effectiveFrom.Date)
         {
             skipReason = $"当前日期 {today:yyyy-MM-dd} 早于生效日 {effectiveFrom:yyyy-MM-dd}，不加载网页。";
@@ -127,9 +270,27 @@ public class StartupWebGate : MonoBehaviour
         return true;
     }
 
-    private void OnStartupWebClosed()
+    private void HideStartupWebView()
     {
-        EnterLoadingScene(true);
+        var webViewController = FindWebViewController();
+        if (webViewController != null)
+            webViewController.CloseWebView();
+
+        _startupWebVisible = false;
+        _lastDisplayedUrl = null;
+        SetStartupWebBgmSuppressed(false);
+    }
+
+    private static void SetStartupWebBgmSuppressed(bool suppressed)
+    {
+        AudioManager.SetStartupWebBgmSuppressed(suppressed);
+    }
+
+    private void OnStartupWebPageLoaded()
+    {
+        // 页面加载完成后再停一次，兜底 PTG 返回早于 Init_Enter 播 BGM 的竞态。
+        AudioManager.StopBgmForStartupWeb();
+        ActivateAppMetricaIfNeeded();
     }
 
     private void ActivateAppMetricaIfNeeded()
@@ -161,13 +322,21 @@ public class StartupWebGate : MonoBehaviour
             return;
 
         _isEnteringGame = true;
-        _didOpenStartupWeb = openedStartupWeb;
 
         if (openedStartupWeb)
             ReleaseBootstrapWebView();
 
         DestroyVuplexKeyboardManagerIfPresent();
         SceneManager.LoadScene(LoadingSceneName);
+    }
+
+    private static void EnsureWebViewPersists()
+    {
+        var webViewController = FindWebViewController();
+        if (webViewController == null)
+            return;
+
+        DontDestroyOnLoad(webViewController.transform.root.gameObject);
     }
 
     private static void SetWebViewControllerActive(bool active)
@@ -202,10 +371,13 @@ public class StartupWebGate : MonoBehaviour
 
     private void OnDestroy()
     {
+        if (_instance == this)
+            _instance = null;
+
         if (_isEnteringGame)
             return;
 
-        if (_didOpenStartupWeb)
+        if (_startupWebVisible)
             ReleaseBootstrapWebView();
 
         DestroyVuplexKeyboardManagerIfPresent();
